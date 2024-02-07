@@ -40,8 +40,7 @@ Using `ssh-keygen.exe` in `git-bash` creates a keypair successfully, but (appare
 
 **Here's a walkthrough for Mac users on how to set up git-bash, SSH keys, and GitHub.**
 
-[![Install SSH Keys in Git using a Mac]
-(https://i.ytimg.com/vi/rajlGZ3w4OU/maxresdefault.jpg)](https://www.youtube.com/embed/rajlGZ3w4OU?si=UPknm4ygzhenNrRN)
+[![Install SSH Keys in Git using a Mac](https://i.ytimg.com/vi/rajlGZ3w4OU/maxresdefault.jpg)](https://www.youtube.com/embed/rajlGZ3w4OU?si=UPknm4ygzhenNrRN)
 
 
 ## Windows
