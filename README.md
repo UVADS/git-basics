@@ -20,5 +20,7 @@ How to set up, configure, and work with git and GitHub.
     - Create a repository locally
     - Create a repository in GitHub
     - Adding or removing collaborators
-- Source control for your code
+- Source control basics
 - Advanced topics
+- Issues, Pull Requests, and Merges
+- GitHub Actions
