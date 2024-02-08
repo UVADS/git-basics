@@ -34,6 +34,14 @@ Using `ssh-keygen.exe` in `git-bash` creates a keypair successfully, but (appare
     <li>See the screencast above for a walkthrough.</li>
 </ol>
 
+## Authentication Options
+
+GitHub offers two ways to authenticate your local workstation with GitHub. Usernames and passwords are no longer an option,
+as they present security risks. Instead use one of these:
+
+- **SSH Keys** - the above walkthroughs used SSH keypairs to authenticate your computer to GitHub. These allow your pushes and puls, etc. to authenticate seamlessly to GitHub as a full owner of the repository.
+- **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here]().
+
 ## First-time Configuration
 
 The first time you use git you will encounter a couple of setup issues:
