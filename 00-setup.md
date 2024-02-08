@@ -1,5 +1,12 @@
 # Set Up & Install Git
 
+### Contents
+
+1. Installing on a Mac
+2. Installing on Windows
+3. Authentication Options
+4. First-time Configuration
+
 Setting up git and authenticating yourself to GitHub is an important first step in managing and tracking your code and various projects. Follow these steps, in order:
 
 ## Mac
