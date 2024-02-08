@@ -70,10 +70,12 @@ as they present security risks. Instead use one of these:
 
 ## First-time Configuration
 
+Confirm your installation is working by issuing the `git` command from within your terminal. You should see a number of subcommands avaialable to you.
+
 The first time you use git you will encounter a couple of setup issues:
 
 - The first time you clone a repository from GitHub using a new ssh key you will get a "key fingerprint" approval request. You can safely say "Yes" to this request, which you will only be asked once.
-- The first time you try to commit code on your laptop using git you will be asked to configure two settings - your name and email. This is simply to identify you in the log of commits and changes. Here are the two settings; replace the values in quotes with your own info:
+- The first time you try to commit code on your laptop using `git` you will be asked to configure two settings - your name and email. This is simply to identify you in the log of commits and changes. Here are the two settings; replace the values in quotes with your own info:
 
     git config --global user.name "Your Name"
     git config --global user.email "mst3k@virginia.edu
