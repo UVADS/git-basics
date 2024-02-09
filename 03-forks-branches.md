@@ -2,9 +2,9 @@
 
 Git enables software developers to copy an existing codebase and work with the copy alongside the original, without one interfering with the other. 
 
-- The easiest way to copy your entire project code and work with it is called a "Branch".
-- The method for copying someone else's project in order to work with is called a "Fork".
-- Bringing your changes back into either your project or someone else's is called a "Merge". This function is called a "Pull Request" in GitHub.
+- The easiest way to copy your entire project code and work with it is called a ["Branch"](#branches).
+- The method for copying someone else's project in order to work with is called a ["Fork"](#forks).
+- Bringing your changes back into either your project or someone else's is called a ["Merge"](#merges--pull-requests). This function is called a "Pull Request" in GitHub.
 
 ## Branches
 
