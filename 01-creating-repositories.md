@@ -47,9 +47,11 @@ To initialize a local git repository and then connect it with GitHub:
 
 1. Create a directory for your new project and `cd` into it.
 2. Issue the `git init` command to initialize the repository.
-3. Then add a file and commit it and create a default branch.
+3. Then add a file and commit it
+4. Create a default branch.
 
 ```
+mkdir project1
 echo "# foo" >> README.md
 git init
 git add README.md
