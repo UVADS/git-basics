@@ -25,7 +25,7 @@ Responsible software management depends
     - Create a repository locally
     - Create a repository in GitHub
     - Adding or removing collaborators
-- [Source control basics](02-git-basics.md)
-- [Branches, Forks, and Merges](03-forks-branches.md)
+- [**Source control basics**](02-git-basics.md)
+- [**Branches, Forks, and Merges**](03-forks-branches.md)
 - Issues
 - GitHub Actions
