@@ -43,12 +43,25 @@ done
 
 Git repositories can also be created locally and connected with GitHub after creation. (In fact, there are some cases where a local git repository is used for source control but never connected to an external hub.) 
 
-To create a local git repository:
+To initialize a local git repository and then connect it with GitHub:
 
 1. Create a directory for your new project and `cd` into it.
 2. Issue the `git init` command to initialize the repository.
-3. The `ls -al` command will now show you a hidden `.git` directory.
+3. Then add a file and commit it and create a default branch.
 
-To connect a local git repository with GitHub:
+```
+echo "# foo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+```
 
-1. Be sure your local repository has at least one change in its commit history.
+4. Next, create an empty repository in GitHub. Do not add a README.md file in that process (leave that unchecked).
+5. Copy the SSH URL to your new repository, which will look something like `git@github.com:<account>/<repo>.git`
+6. Finally, add the remote origin and push your repo.
+
+```
+git remote add origin git@github.com:<account>/<repo>.git
+git push -u origin main
+```
