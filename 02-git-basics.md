@@ -2,11 +2,10 @@
 
 This page covers the most essential commands when tracking your code using `git` and GitHub.
 
-1. `git status`
-1. `git add`
-2. `git commit`
-3. `git push`
-4. `git pull`
+1. [`git status`](#status)
+2. [`git add`](#add)
+3. [`git commit`](#commit)
+4. [`git push` / `git pull`](#push--pull)
 
 ## Status
 
