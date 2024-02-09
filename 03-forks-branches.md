@@ -41,6 +41,8 @@ git branch -d <branch-name>
 
 ## Forks
 
+![Image](images/fork-clone-upstream.png)
+
 A fork is a copy of someone else's repository. This is usually because you do not have access to push changes to the repository, or because the organization that controls it requires all changes come through forks and pull requests.
 
 When you fork a repository, a complete copy is made in your own account (or Organization) in GitHub. This gives you complete control to clone and work with the code freely. You own the forked copy, so you can make additions, new functionality, and commit+push to your own fork.
@@ -54,5 +56,16 @@ To create and work with a fork of a repository:
 5. Make changes, then `git add`, `git commit` and `git push` to your fork.
 
 ## Upstream
+
+Repotories that are linked with GitHub already have a remote configuration generally called "origin". This is a reference to the external hosted version of a repository, i.e. the destination when you `git push` or the source when you `git pull`.
+
+To see your remote settings for a specific repository, use the verbose output of the `git remote` command:
+```
+$ git remote -v
+
+origin  git@github.com:UVADS/git-basics.git (fetch)
+origin  git@github.com:UVADS/git-basics.git (push)
+```
+In this example, `origin` is configured for both pulling and pushing.
 
 ## Merges / Pull Requests
