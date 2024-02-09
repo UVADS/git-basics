@@ -70,3 +70,10 @@ git branch -M main
 git remote add origin git@github.com:<account>/<repo>.git
 git push -u origin main
 ```
+
+## Delete
+
+To delete a repository you have both in GitHub and on your local computer, do the following:
+
+1. Locally, `cd ../` to the parent directory above your project directory, and `rm -Rf <project-name>` to delete the entire folder. You can also use the MacOS Finder or Windows Explorer to select and delete this folder.
+2. In GitHub, within the repository page itself, click the "Settings" tab, and scroll to the bottom. There you will find a "Delete this repository" button.
