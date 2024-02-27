@@ -21,12 +21,12 @@ To see all available stashes:
 ```
 git stash list
 ```
-If you have only one stash listed, you can pull those files/changes back into your branch with
+If you have only one stash listed, or you want to use the most recent stash (with index `0`), you can pull those files/changes back into your branch with
 ```
 git stash pop
 ```
 
-If you have more than one stash listed, you need to `apply` the stash by index (`0`, `1`, `2`, ...)
+If you have more than one stash listed and want to specify which you want to re-incorporate, you need to `apply` the stash by index (`0`, `1`, `2`, ...)
 ```
 git stash pop <INDEX>
 ```
