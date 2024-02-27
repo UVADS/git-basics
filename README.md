@@ -27,5 +27,6 @@ Responsible software management depends
     - Adding or removing collaborators
 - [**Source control basics**](02-git-basics.md)
 - [**Branches, Forks, and Merges**](03-forks-branches.md)
-- Issues
-- GitHub Actions
+- [**Issues**](04-github-issues.md)
+- [**Advanced Git/GitHub Features**](05-git-advanced.md)
+- [**GitHub Actions**](06-github-actions.md)
