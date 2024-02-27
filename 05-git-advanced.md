@@ -2,10 +2,132 @@
 
 Features to tackle:
 
-- Signing commits
-- Reset `HEAD` / rollbacks
-- Rebase
+- [Git Stash](#git-stash)
+- [Signing commits](#signing-commits)
+- [Resets and reverting](#resets-and-reverting)
+- [Rebase](#rebase)
+- [Cherry-pick](#cherry-pick)
 - Fast-Forward
+
+## Git Stash
+
+`git stash` is a useful command for setting changes aside while you want to perform another `git` operation, such as a `add`, `push`, `pull`, etc.
+
+`stash` allows you to save your in-progress changes, whether they are staged or unstaged, and puts them aside while reverting your working directory back to `HEAD`.
+
+Git stores `stash`es in a list that can be reviewed and applied later, if you want to bring those changed files back in.
+
+To see all available stashes:
+```
+git stash list
+```
+If you have only one stash listed, you can pull those files/changes back into your branch with
+```
+git stash pop
+```
+
+If you have more than one stash listed, you need to `apply` the stash by index (`0`, `1`, `2`, ...)
+```
+git stash pop <INDEX>
+```
+
+## Signing commits
+
+**Why would I sign a commit?**
+
+When working in a team of developers (especially large teams), or when developing code around highly sensitive data or processes, verifying the identity of each collaborator is important. Signing a commit proves authorship, increases trust, assures compliance, and generally boosts confidence in the origin of the code.
+
+You can sign your commits using a `gpg` or `ssh` keypair, or a `S/MIME` signature. 
+
+GitHub refers to this as signature verification. Learn more about how to set up [sigature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+
+Once set up, you can sign any commit:
+```bash
+git commit -S -m "my commit message"
+```
+
+## Resets and reverting
+
+Sometimes, despite your best efforts, something is committed into your repository that has gone horribly wrong. Perhaps many files are affected, or the stability of your application is in jeopardy. You need to revert your changes and go back one or more versions in `git`.
+
+**Reset** - rewinds your history (files and commits) back to the previous commit.
+
+```
+# If you are pulling, rebasing or your new code is a mess, and you want to return to the last committed point:
+# Note that this does not delete newly created files
+# git clean -f -d will remove newly created files and directories (BEWARE!)
+git reset --hard
+
+# reset to the last commit
+# HEAD is the current commit, HEAD^ is the last commit
+# HEAD~2 is the 3rd, HEAD~3 is the 4th and so on...
+git reset --hard HEAD^
+
+# reset to a particular commit
+git reset --hard be47384a
+```
+
+**Revert** - rewinds your files ack to the previous commits by adding a new commit to show this.
+
+```
+# Revert the commit 0766c053
+# Note that commit may not necessary be the last commit, it can be ANY commit
+git revert 0766c053
+
+# Revert the changes specified by the fourth last commit in HEAD and create a new commit with the reverted changes.
+git revert HEAD~3
+
+# Revert the changes done by commits from the fifth last commit in master (included) to the third last commit in master (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
+git revert -n main~5..main~2
+```
+
+If you have already pushed your changes, you should use **revert** since it explains the changes in its history.
+
+## Rebase
+
+From GitHub:
+
+> The git rebase command allows you to easily change a series of commits, modifying the history of your repository. You can reorder, edit, or squash commits together.
+
+You might rebase to edit previous commit messages, combine commits, and delete/revert unnecessary commits.
+
+[Read more](https://docs.github.com/en/get-started/using-git/about-git-rebase) about methods and approaches to rebasing.
+
+## Cherry-pick
+
+Cherry picking is choosing a commit from one branch and applying it to another. Similar to merging and rebasing, cherry picking can be done at the individual file level (or at whatever level of changes you want) instead of an entire branch at a time.
+
+Take the example below. A developer has been working on the `main` branch, while a second developer began a new `nav` branch. The second developer fixed a bug in the `main` branch before moving on to other work, and the first developer would like to apply ONLY that bug fix to the `main` branch. 
+
+<img style="width:600px;align:left;" src="./images/git-cherry-pick.png">
+
+This is an ideal case for using `git cherry-pick`. When cherry picking you use the hash of any individual commit, available from `git log` in the branch you want to pick from.
+
+In this case, if you want to `cherry-pick` from the `nav` branch:
+```
+git log nav --oneline
+```
+This will display the log of commits for the `nav` branch, including the hashes of each commit:
+```
+e8a582f (nav) added logo to footer
+f3b9124 Added nav component skeleton
+4214d55 Bugfix in config
+3359d42 Added app config and README
+8196bd8 Initial commit
+```
+The commit `4214d55` from `nav` is the one we want to `cherry-pick` over into the `main` branch. This requires only one task, which in itself will be a new commit to `main`. This must be done while in the main branch itself:
+
+```
+git cherry-pick 4214d55
+```
+`cherry-pick` also allows you to pull in more than one commit at a time, if that is useful. The syntax would be:
+
+```
+git cherry-pick 4214d55 e8a582f
+```
+Git will then digest these commits into the `main` branch, in the order in which the command was made. Each of these will then become a new commit in the branch (i.e. two commits in this example).
+
+If there was a conflict when trying to absorb those cherry-picked changes, you will have to sort out the merge conflict.
 
 ## So You Think You Know Git
 
