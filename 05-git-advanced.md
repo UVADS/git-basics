@@ -1,13 +1,14 @@
 # Advanced `git`
 
-Features to tackle:
+Some deeper features you may find useful:
 
 - [Git Stash](#git-stash)
 - [Signing commits](#signing-commits)
 - [Resets and reverting](#resets-and-reverting)
 - [Rebase](#rebase)
 - [Cherry-pick](#cherry-pick)
-- Fast-Forward
+- [Rename `origin`](#rename-origin)
+- [Bonus](#bonus---so-you-think-you-know-git)
 
 ## Git Stash
 
@@ -19,17 +20,21 @@ Git stores `stash`es in a list that can be reviewed and applied later, if you wa
 
 To see all available stashes:
 ```
-git stash list
+$ git stash list
+stash@{0}: WIP on main: 26393a3 Another commit
+stash@{1}: WIP on main: 4d931c4 Testing rebase
 ```
 If you have only one stash listed, or you want to use the most recent stash (with index `0`), you can pull those files/changes back into your branch with
 ```
-git stash pop
+$ git stash pop
 ```
 
 If you have more than one stash listed and want to specify which you want to re-incorporate, you need to `apply` the stash by index (`0`, `1`, `2`, ...)
 ```
-git stash pop <INDEX>
+$ git stash pop <INDEX>
 ```
+
+There are other powerful stash options, such as creating a new branch based on the stash.
 
 ## Signing commits
 
@@ -41,10 +46,13 @@ You can sign your commits using a `gpg` or `ssh` keypair, or a `S/MIME` signatur
 
 GitHub refers to this as signature verification. Learn more about how to set up [sigature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
-Once set up, you can sign any commit:
+Once set up, you can sign any commit, or set a repo/global configuration to always sign your commits.
+
 ```bash
 git commit -S -m "my commit message"
 ```
+
+Developers can also sign pushes in the same way as commits.
 
 ## Resets and reverting
 
@@ -129,9 +137,37 @@ Git will then digest these commits into the `main` branch, in the order in which
 
 If there was a conflict when trying to absorb those cherry-picked changes, you will have to sort out the merge conflict.
 
-## So You Think You Know Git
+## Rename `origin`
 
-In this video Scott Chacon, one of the co-founders and original developers of GitHub, talks about advanced features and usage in Git and GitHub.
+When working with remote repository connections, the label `origin` is typically used for the primary remote host, i.e. GitHub, BitBucket, etc. This is used freqeuently with pushes to designate where to push the local branch:
+
+```
+$ git push origin main
+```
+We also use a remote label like `upstream` when working with forked repositories and need to `fetch` changes from upstream.
+
+However, these names can be changed at any point. To see your current remotes, use:
+
+```
+$ git remote -v
+origin	    git@github.com:mst3k/some-repo.git (fetch)
+origin	    git@github.com:mst3k/some-repo.git (push)
+upstream	https://github.com/uvads/some-repo.git (fetch)
+upstream	https://github.com/uvads/some-repo.git (push)
+```
+
+Use the built-in command to rename any origin:
+```
+$ git remote rename origin destination
+
+$ git remote -v
+destination	    git@github.com:mst3k/some-repo.git (fetch)
+destination	    git@github.com:mst3k/some-repo.git (push)
+```
+
+## Bonus - So You Think You Know Git
+
+In this video Scott Chacon, one of the co-founders and original developers of GitHub, talks about buried and advanced features in Git and GitHub.
 
 <a href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" target="_new"><img style="width:600px;align:left;" src="./images/scott-chacon-git-talk.png"></a>
 
