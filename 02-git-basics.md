@@ -1,4 +1,4 @@
-# Git Basics
+****# Git Basics
 
 This page covers the most essential commands when tracking your code using `git` and GitHub.
 
@@ -9,8 +9,7 @@ This page covers the most essential commands when tracking your code using `git`
 
 ## Status
 
-Running the `git status` command at any point will tell you what untracked files are in your project directory,
-or whether you have added changes that need committing, or whether you need to push.
+Running the `git status` command at any point will tell you what untracked files are in your project directory, or whether you have added changes that need committing, or whether you need to push.
 
 For example, the command below shows that a file has been modified but not yet staged for commit:
 ```
@@ -116,3 +115,67 @@ Ultimately, good team communication matters the most in this environment.
 ### Why doesn't `git` synchronize automatically like Dropbox?
 
 Since changes to code happen over time and require effort to get to a working state, the `git` model depends upon developers having their own sense for when code is ready to be committed and added to source control. Put another way, you don't want half-completed code shipping into the rest of your project.
+
+## Log
+
+Since `git` was built to track changes, returning a log of all commits is simple. The default output is verbose and each entry takes several lines:
+
+```
+$ git log
+commit 6a6357bd9f27663e093ef8b08ed8a1cff6d3685d (HEAD -> main, origin/main, origin/HEAD)
+Author: Neal Magee <nem2p@virginia.edu>
+Date:   Wed Feb 28 10:01:24 2024 -0500
+
+    Extending the advanced page
+
+commit 1c552497f2b80100a0256d2b9bfd36895acca260
+Author: Neal Magee <nem2p@virginia.edu>
+Date:   Tue Feb 27 10:23:34 2024 -0500
+
+    Typos abound. Adding second new section.
+
+commit 7c271f203df3a9eaab9e2cb6081a4ebda029dfdb
+Author: Neal Magee <nem2p@virginia.edu>
+Date:   Tue Feb 27 10:22:13 2024 -0500
+
+    Clearer sections in the TOC.
+```
+
+However, the log can be displayed and manipulated. One useful flag is `--online`:
+```
+$ git log --oneline
+6a6357b (HEAD -> main, origin/main, origin/HEAD) Extending the advanced page
+1c55249 Typos abount. Adding second new section.
+7c271f2 Clearer sections in the TOC.
+9200074 Tracking - more content with 4-5-6 pages
+8c0e746 Update 03-forks-branches.md
+c98492b Width of image
+dd1ea8e Update 03-forks-branches.md
+b835f2f Adding image and upstream
+dc97b96 TOC on page 3
+```
+
+Even more informative, you can log with a graph output, showing all commits across all branches:
+
+```
+$ git log --oneline --graph --decorate --all
+* 9bccb364 (origin/staging) Updated ANSYS docs and scripts
+| *   66027815 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #506 from uvarc/staging
+| |\  
+| |/  
+|/|   
+* | 0832e6ee timestamp message
+* | ad6834d7 lammps slurm
+* | 1f8beb43 lammps cpu and gpu
+* | 6c7137d3 Changed Gurobi page to reflect latest version
+| *   cfaf53cc Merge pull request #505 from uvarc/staging
+| |\  
+| |/  
+|/|   
+* | 9663a4be Pushing changes to people
+| *   60d037e2 Merge pull request #504 from uvarc/staging
+| |\  
+| |/  
+|/|   
+* | 79c0c50e status page update and timestamps
+```

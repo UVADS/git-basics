@@ -1,6 +1,6 @@
 # Working with `git` and GitHub in Data Science
 
-How to set up, configure, and work with git and GitHub.
+How to set up, configure, and work with `git` and GitHub.
 
 ## What is `git`?
 
@@ -12,21 +12,38 @@ GitHub is a developer platform that allows developers to create, store, manage a
 
 ## Git & GitHub in Data Science
 
-Data aggregation, cleaning, pipelines and ML models all rely on software in order to operate.
-Responsible software management depends 
+Data aggregation, cleaning, pipelines and ML models all rely on software in order to operate. Responsible software management depends on well-managed code, versioning, prioritizing bugs, features, and user issues. Further, modern platforms and infrastructure tend to favor code-driven tests, builds, deployment, and management.
+
+All of which is to say: Code is fundamental to our work, and only the foolish would avoid using source control.
 
 ## Contents
 
 - [**Setup**](00-setup.md)
-    - Install and set up `git`
-    - Authenticate `git` to GitHub
-    - Basic configuration
+  - Install and set up `git`
+  - Authenticate `git` to GitHub
+  - Basic configuration
 - [**Creating and managing a repository**](01-creating-repositories.md)
-    - Create a repository locally
-    - Create a repository in GitHub
-    - Adding or removing collaborators
+  - Create a repository locally
+  - Create a repository in GitHub
+  - Adding or removing collaborators
 - [**Source control basics**](02-git-basics.md)
+  - Status
+  - Add
+  - Commit
+  - Push/Pull
+  - Log
 - [**Branches, Forks, and Merges**](03-forks-branches.md)
+  - Branches
+  - Forks
+  - Fetch from Upstream
+  - Merges and Pull Requests
 - [**Issues**](04-github-issues.md)
 - [**Advanced Git/GitHub Features**](05-git-advanced.md)
+  - Stash
+  - Signing commits
+  - Reset and Revert
+  - Rebase
+  - Cherry-pick
+  - Renaming `origin`
+  - Bonus
 - [**GitHub Actions**](06-github-actions.md)

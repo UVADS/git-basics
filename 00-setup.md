@@ -2,13 +2,20 @@
 
 ### Contents
 
-1. [Installing on a Mac](#mac)
-2. [Installing on Windows](#windows)
-3. [Installing on Linux](#linux)
-4. [Authentication Options](#authentication-options)
-5. [First-time Configuration](#first-time-configuration)
+- [Set Up \& Install Git](#set-up--install-git)
+    - [Contents](#contents)
+  - [Command-Line Git](#command-line-git)
+  - [Mac](#mac)
+  - [Windows](#windows)
+- [Linux](#linux)
+  - [Authentication Options](#authentication-options)
+  - [First-time Configuration](#first-time-configuration)
 
-Setting up git and authenticating yourself to GitHub is an important first step in managing and tracking your code and various projects. Follow the steps for your platform:
+Setting up git and authenticating yourself to GitHub is an important first step in managing and tracking your code and various projects. Follow the steps for your platform below
+
+## Command-Line Git
+
+Data scientists and software developers who write code regularly *greatly* tend to use the terminal/command-line to interact with `git`. This primer assumes this and does not address various GUI tools for working with `git` and GitHub.
 
 ## Mac
 
