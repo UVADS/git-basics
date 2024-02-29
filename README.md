@@ -47,3 +47,7 @@ All of which is to say: Code is fundamental to our work, and only the foolish wo
   - Renaming `origin`
   - Bonus
 - [**GitHub Actions**](06-github-actions.md)
+  - About
+  - Credentials & Secrets
+  - Example 1 - Build software upon a push
+  - Example 2 - Build and deploy a container
