@@ -2,13 +2,14 @@
 
 Some deeper features you may find useful:
 
-- [Git Stash](#git-stash)
-- [Signing commits](#signing-commits)
-- [Resets and reverting](#resets-and-reverting)
-- [Rebase](#rebase)
-- [Cherry-pick](#cherry-pick)
-- [Rename `origin`](#rename-origin)
-- [Bonus](#bonus---so-you-think-you-know-git)
+- [Advanced `git`](#advanced-git)
+  - [Git Stash](#git-stash)
+  - [Signing commits](#signing-commits)
+  - [Resets and reverting](#resets-and-reverting)
+  - [Rebase](#rebase)
+  - [Cherry-pick](#cherry-pick)
+  - [Rename `origin`](#rename-origin)
+  - [Bonus - So You Think You Know Git](#bonus---so-you-think-you-know-git)
 
 ## Git Stash
 
@@ -139,10 +140,11 @@ If there was a conflict when trying to absorb those cherry-picked changes, you w
 
 ## Rename `origin`
 
-When working with remote repository connections, the label `origin` is typically used for the primary remote host, i.e. GitHub, BitBucket, etc. This is used freqeuently with pushes to designate where to push the local branch:
+When working with remote repository connections, the label `origin` is typically used for the primary remote host, i.e. GitHub, BitBucket, etc. This is used freqeuently with pushes and pulls to connect the local branch to the appropriate destination or source.
 
 ```
 $ git push origin main
+$ git pull origin main
 ```
 We also use a remote label like `upstream` when working with forked repositories and need to `fetch` changes from upstream.
 
