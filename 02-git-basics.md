@@ -185,9 +185,9 @@ The git log can be displayed and manipulated. One useful flag is `--online`:
 ```
 $ git log --oneline
 6a6357b (HEAD -> main, origin/main, origin/HEAD) Extending the advanced page
-1c55249 Typos abount. Adding second new section.
-7c271f2 Clearer sections in the TOC.
-9200074 Tracking - more content with 4-5-6 pages
+1c55249 Typos abound. Adding second new section.
+7c271f2 Clearer sectioning in the TOC.
+9200074 Tracking - more content and adding 4-5-6 pages
 8c0e746 Update 03-forks-branches.md
 c98492b Width of image
 dd1ea8e Update 03-forks-branches.md
