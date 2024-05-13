@@ -172,7 +172,16 @@ Date:   Tue Feb 27 10:22:13 2024 -0500
     Clearer sections in the TOC.
 ```
 
-However, the log can be displayed and manipulated. One useful flag is `--online`:
+Notice that at least four data points are returned for each commit:
+
+- The commit SHA or hash identifier
+- The commit author and email
+- The commit date and time
+- The commit message
+
+> **TIP!** When referencing other commits you do not need to use the entire hash. Usually the first 4-5 characters are enough, so long as they can be differentiated from any other commits. Notice in the log output below even git itself truncates commit hashes to six characters.
+
+The git log can be displayed and manipulated. One useful flag is `--online`:
 ```
 $ git log --oneline
 6a6357b (HEAD -> main, origin/main, origin/HEAD) Extending the advanced page
@@ -186,7 +195,7 @@ b835f2f Adding image and upstream
 dc97b96 TOC on page 3
 ```
 
-Even more informative, you can log with a graph output, showing all commits across all branches:
+Even more informative, you can log with a graph output, showing commits across all branches:
 
 ```
 $ git log --oneline --graph --decorate --all
