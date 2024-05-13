@@ -1,11 +1,41 @@
-****# Git Basics
+# Git Basics
 
 This page covers the most essential commands when tracking your code using `git` and GitHub.
 
-1. [`git status`](#status)
-2. [`git add`](#add)
-3. [`git commit`](#commit)
-4. [`git push` / `git pull`](#push--pull)
+1. [`git diff`](#diff)
+2. [`git status`](#status)
+3. [`git add`](#add)
+4. [`git commit`](#commit)
+5. [`git push` / `git pull`](#push--pull)
+6. [`git log`](#log)
+
+## Diff
+
+Git was designed to track changes made to files and their location within a project. `git diff` is one of the best ways to see how things have actually changed. `git diff` is a function that takes two input data sets and outputs the changes between them.
+
+For example, imagine that you have cleaned up your code a bit, added some new functionality, and inserted more comments inline. But you step away from your desk (or go to sleep or it's suddenly the weekend) and you need a reminder of what changes have been made to file before you add and commit it? `git diff` can tell you.
+
+A command like this:
+```
+git diff filename.py
+```
+will show you a detailed inventory of inserted lines (which start with `+` and are highlighted in blue), deleted lines (which start with `-` and are highlighted in red) for the entire file.
+
+Or if you need to compare the structure of two directories:
+```
+git diff dir1 dir2
+```
+
+Or if you need to compare the changes between two commits:
+```
+git diff 6a63 d726
+```
+
+Or if you need to compare the last commit with the current state (before commits):
+```
+git diff a0ea0 .
+```
+
 
 ## Status
 
@@ -25,6 +55,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
+
 
 ## Add
 
@@ -123,19 +154,19 @@ Since `git` was built to track changes, returning a log of all commits is simple
 ```
 $ git log
 commit 6a6357bd9f27663e093ef8b08ed8a1cff6d3685d (HEAD -> main, origin/main, origin/HEAD)
-Author: Neal Magee <nem2p@virginia.edu>
+Author: Data Student <mst3k@virginia.edu>
 Date:   Wed Feb 28 10:01:24 2024 -0500
 
     Extending the advanced page
 
 commit 1c552497f2b80100a0256d2b9bfd36895acca260
-Author: Neal Magee <nem2p@virginia.edu>
+Author: Data Student <mst3k@virginia.edu>
 Date:   Tue Feb 27 10:23:34 2024 -0500
 
     Typos abound. Adding second new section.
 
 commit 7c271f203df3a9eaab9e2cb6081a4ebda029dfdb
-Author: Neal Magee <nem2p@virginia.edu>
+Author: Data Student <mst3k@virginia.edu>
 Date:   Tue Feb 27 10:22:13 2024 -0500
 
     Clearer sections in the TOC.
