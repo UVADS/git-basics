@@ -96,11 +96,14 @@ If you have already pushed your changes, you should use **revert** since it expl
 
 From GitHub:
 
-> The git rebase command allows you to easily change a series of commits, modifying the history of your repository. You can reorder, edit, or squash commits together.
+> The `git rebase` command allows you to easily change a series of commits, modifying the history of your repository. You can reorder, edit, or squash commits together.
 
-You might rebase to edit previous commit messages, combine commits, and delete/revert unnecessary commits.
+You might `rebase` to edit previous commit messages, combine commits, and delete/revert unnecessary commits.
 
 [Read more](https://docs.github.com/en/get-started/using-git/about-git-rebase) about methods and approaches to rebasing.
+
+Please note that it is considered bad practice to rebase commits that have already been pushed to a repository. This could create
+considerable problems for other collaborators.
 
 ## Cherry-pick
 
