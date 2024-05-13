@@ -14,7 +14,7 @@ GitHub is a developer platform that allows developers to create, store, manage a
 
 Data aggregation, cleaning, pipelines and ML models all rely on software in order to operate. Responsible software management depends on well-managed code, versioning, prioritizing bugs, features, and user issues. Further, modern platforms and infrastructure tend to favor code-driven tests, builds, deployment, and management.
 
-All of which is to say: Code is fundamental to our work, and only the foolish would avoid using source control.
+All of which is to say: Code is fundamental to our work, and it would be both risky and impractical to not use source control.
 
 ## Contents
 
@@ -27,10 +27,12 @@ All of which is to say: Code is fundamental to our work, and only the foolish wo
   - Create a repository in GitHub
   - Adding or removing collaborators
 - [**Source control basics**](02-git-basics.md)
+  - Diff
   - Status
   - Add
   - Commit
   - Push/Pull
+  - Fetch
   - Log
 - [**Branches, Forks, and Merges**](03-forks-branches.md)
   - Branches

@@ -7,7 +7,9 @@ This page covers the most essential commands when tracking your code using `git`
 3. [`git add`](#add)
 4. [`git commit`](#commit)
 5. [`git push` / `git pull`](#push--pull)
-6. [`git log`](#log)
+6. [`git fetch`](#fetch)
+7. [`git log`](#log)
+
 
 ## Diff
 
@@ -146,6 +148,16 @@ Ultimately, good team communication matters the most in this environment.
 ### Why doesn't `git` synchronize automatically like Dropbox?
 
 Since changes to code happen over time and require effort to get to a working state, the `git` model depends upon developers having their own sense for when code is ready to be committed and added to source control. Put another way, you don't want half-completed code shipping into the rest of your project.
+
+## Fetch
+
+The `git fetch` command downloads the latest changes from a remote repository, but it doesn't merge those changes into your local working directory. This means that you can see what changes have been made to the remote repository without having to merge them into your own work.
+
+Fetch is a relatively "harmless" command since it does not modify or delete anything. You can never fetch too often, and the advantage is that it lets you see all remote changes before you commit or merge.
+
+How is `fetch` different from `pull`? Pulling updates the HEAD of your repository with the changes from the remote repository. So it both pulls down new data/changes but also integrates them with your copy of the repository. 
+
+> **What does HEAD mean?** `HEAD` is the name for the current version of the repository, the most recent commit. Notice in the section below, the top-most (i.e. most recent) commit will also be aliased as `HEAD`.
 
 ## Log
 
