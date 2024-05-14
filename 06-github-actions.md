@@ -123,7 +123,6 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm64
-          push: ${{ github.event_name != 'pull_request' }}
           tags: ghcr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           labels: ${{ steps.meta.outputs.labels }}
 
