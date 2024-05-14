@@ -4,7 +4,7 @@ baseurl: ""
 # url: "https://uvads.github.io/git-basics" # the base hostname & protocol for your site, e.g. http://example.com
 repository: uvads/git-basics # for github-metadata
 
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 permalink: pretty
 
