@@ -1,3 +1,12 @@
+---
+layout: default
+title: Forks & Branches
+nav_order: 5
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
+---
+
+
 # Branches Forks & Merges
 
 Git enables software developers to copy an existing codebase and work with the copy alongside the original, without one interfering with the other. 

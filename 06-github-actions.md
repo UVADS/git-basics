@@ -1,3 +1,11 @@
+---
+layout: default
+title: GitHub Actions
+nav_order: 8
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
+---
+
 # GitHub Actions
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) service provided by GitHub. It allows developers to automate various tasks and workflows within their repositories. With GitHub Actions, you can define custom workflows using YAML files that specify the sequence of steps to be executed when certain events occur, such as code pushes, pull requests, or releases. 

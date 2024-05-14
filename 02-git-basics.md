@@ -1,3 +1,11 @@
+---
+layout: default
+title: Git Basics
+nav_order: 4
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
+---
+
 # Git Basics
 
 This page covers the most essential commands when tracking your code using `git` and GitHub.

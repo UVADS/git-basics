@@ -1,3 +1,11 @@
+---
+layout: default
+title: Advanced Git
+nav_order: 7
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
+---
+
 # Advanced `git`
 
 Some deeper features you may find useful:

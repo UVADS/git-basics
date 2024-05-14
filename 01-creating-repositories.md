@@ -1,3 +1,11 @@
+---
+layout: default
+title: Repositories
+nav_order: 3
+description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+permalink: /
+---
+
 # Creating and Managing Git Repositories
 
 Creating a new repository is often confusing to new users of Git and GitHub. Here is a simple explanation of the two options, with complete instructions on how to work with each.
