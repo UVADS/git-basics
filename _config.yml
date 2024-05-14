@@ -1,7 +1,7 @@
 title: Source Control in Data Science
 description: A Jekyll theme for documentation
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://uvads.github.io/git-basics" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" 
+# url: "https://uvads.github.io/git-basics" # the base hostname & protocol for your site, e.g. http://example.com
 repository: uvads/git-basics # for github-metadata
 
 permalink: pretty
@@ -92,7 +92,7 @@ aux_links:
     - "https://github.com/uvads/"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Enable or disable the side/mobile menu globally
 # Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
@@ -103,9 +103,9 @@ nav_enabled: true
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-nav_external_links:
-  - title: UVA Data Science on GitHub
-    url: https://github.com/uvads/
+# nav_external_links:
+#   - title: UVA Data Science on GitHub
+#     url: https://github.com/uvads/
 
 liquid:
    error_mode: strict
