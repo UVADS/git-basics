@@ -1,6 +1,6 @@
 title: Source Control in Data Science
 description: A Jekyll theme for documentation
-baseurl: "" 
+baseurl: "https://uvads.github.io/git-basics/" 
 url: "https://uvads.github.io/git-basics/" # the base hostname & protocol for your site, e.g. http://example.com
 repository: uvads/git-basics # for github-metadata
 
