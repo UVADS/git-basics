@@ -12,7 +12,7 @@ permalink: /
 How to set up, configure, and work with `git` and GitHub.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Get started now](docs/setup/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 
@@ -32,15 +32,15 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
 
 ## Contents
 
-- [**Setup**](00-setup.md)
+- [**Setup**](docs/setup/)
   - Install and set up `git`
   - Authenticate `git` to GitHub
   - Basic configuration
-- [**Creating and managing a repository**](01-creating-repositories.md)
+- [**Creating and managing a repository**](docs/creating-repositories/)
   - Create a repository locally
   - Create a repository in GitHub
   - Add or remove collaborators
-- [**Source control basics**](02-git-basics.md)
+- [**Source control basics**](docs/git-basics/)
   - Diff
   - Status
   - Add
@@ -48,13 +48,13 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Push/Pull
   - Fetch
   - Log
-- [**Branches, Forks, and Merges**](03-forks-branches.md)
+- [**Branches, Forks, and Merges**](docs/forks-branches/)
   - Branches
   - Forks
   - Fetch from Upstream
   - Merges and Pull Requests
-- [**Issues**](04-github-issues.md)
-- [**Advanced Git/GitHub Features**](05-git-advanced.md)
+- [**Issues**](docs/github-issues/)
+- [**Advanced Git/GitHub Features**](docs/git-advanced/)
   - Stash
   - Signing commits
   - Reset and Revert
@@ -62,7 +62,7 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Cherry-pick
   - Renaming `origin`
   - Bonus
-- [**GitHub Actions**](06-github-actions.md)
+- [**GitHub Actions**](docs/github-actions/)
   - About
   - Credentials & Secrets
   - Example 1 - Build software upon a push
