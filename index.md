@@ -39,7 +39,7 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
 - [**Creating and managing a repository**](01-creating-repositories.md)
   - Create a repository locally
   - Create a repository in GitHub
-  - Adding or removing collaborators
+  - Add or remove collaborators
 - [**Source control basics**](02-git-basics.md)
   - Diff
   - Status
@@ -67,10 +67,3 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Credentials & Secrets
   - Example 1 - Build software upon a push
   - Example 2 - Build and deploy a container
-
-
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
-
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. for a list of releases, new features, and bug fixes.
