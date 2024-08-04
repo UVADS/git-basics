@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Setup & Install
+title: 1 - Install & Setup
 nav_order: 2
 ---
 
-# Set Up & Install Git
+# Install & Set Up Git
 
 ### Contents
 
-- [Set Up \& Install Git](#set-up--install-git)
+- [Install \& Set Up Git](#install--set-up-git)
     - [Contents](#contents)
   - [Command-Line Git](#command-line-git)
   - [Mac](#mac)
