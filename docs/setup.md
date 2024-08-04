@@ -25,7 +25,7 @@ Data scientists and software developers who write code regularly *greatly* tend 
 
 ## Mac
 
-**Here's a walkthrough for Mac users on how to set up git-bash, SSH keys, and GitHub.**
+**Here's a walkthrough for Mac users on how to set up git, SSH keys, and GitHub.**
 
 [![Install SSH Keys in Git using a Mac](https://i.ytimg.com/vi/rajlGZ3w4OU/maxresdefault.jpg)](https://www.youtube.com/embed/rajlGZ3w4OU?si=UPknm4ygzhenNrRN)
 
@@ -61,15 +61,11 @@ Install `git` in a Linux distro with the built-in package manager:
 
 Ubuntu:
 
-    apt update && apt install git
+    sudo apt update && apt install git
 
 CentOS/RHEL:
 
-    yum install git
-
-Alpine/APK:
-
-    apk add git
+    sudo yum install git
 
 Then set up your authentication method (SSH keys or PAT) and configure as instructed below.
 
@@ -90,5 +86,6 @@ The first time you use git you will encounter a couple of setup issues:
 - The first time you clone a repository from GitHub using a new ssh key you will get a "key fingerprint" approval request. You can safely say "Yes" to this request, which you will only be asked once.
 - The first time you try to commit code on your laptop using `git` you will be asked to configure two settings - your name and email. This is simply to identify you in the log of commits and changes. Here are the two settings; replace the values in quotes with your own info:
 
-    git config --global user.name "Your Name"
-    git config --global user.email "mst3k@virginia.edu
+
+        git config --global user.name "Your Name"
+        git config --global user.email "mst3k@virginia.edu
