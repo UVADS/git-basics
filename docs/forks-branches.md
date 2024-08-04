@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Forks & Branches
+title: 3 - Forks & Branches
 nav_order: 5
 ---
-
-
 # Branches Forks & Merges
 
 Git enables software developers to copy an existing codebase and work with the copy alongside the original, without one interfering with the other. 

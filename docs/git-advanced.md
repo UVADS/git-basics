@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advanced Git
+title: 5 - Advanced Git
 nav_order: 7
 ---
 

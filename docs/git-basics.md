@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Git Basics
+title: 2 - Git Basics
 nav_order: 4
 ---
 

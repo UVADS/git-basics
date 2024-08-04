@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GitHub Actions
+title: 6 - GitHub Actions
 nav_order: 8
 ---
 

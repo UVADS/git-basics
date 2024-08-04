@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 1 - Install & Setup
+title: 0 - Install & Setup
 nav_order: 2
 ---
 
