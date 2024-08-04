@@ -27,21 +27,21 @@ Assuming you are authenticating to GitHub using SSH keys, here are the steps to 
 3. Copy the address, which will look something like `git@github.com:UVADS/git-basics.git` (SSH) or `https://github.com/UVADS/git-basics.git` (HTTPS). 
 4. In the command-line on your local computer, clone the repo:
 
-```
-git clone git@github.com:UVADS/git-basics.git
-```
+    ```
+    git clone git@github.com:UVADS/git-basics.git
+    ```
 
 5. This will create a new subdirectory with the name of the repository. You can change the name of the directory if you like.
 6. If there are multiple branches in the GitHub repository and you want to clone them all, use these commands:
 
-```
-git clone git@github.com:UVADS/git-basics.git
-cd <repository-name>
-git fetch --all
-for branch in `git branch -r | grep -v HEAD`; do
-  git checkout -b $branch $branch
-done
-```
+    ```
+    git clone git@github.com:UVADS/git-basics.git
+    cd <repository-name>
+    git fetch --all
+    for branch in `git branch -r | grep -v HEAD`; do
+      git checkout -b $branch $branch
+    done
+    ```
 
 7. Note that if you create a new, empty repository within GitHub, it is helpful to tick the box to include a `README.md` file by default. This ensures that a default branch (named `main`) will be created for you.
 
@@ -56,14 +56,14 @@ To initialize a local `git` repository and then connect it with GitHub:
 3. Then add a file and commit it
 4. Create a default branch.
 
-```
-mkdir project1
-echo "# foo" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-```
+    ```
+    mkdir project1
+    echo "# foo" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    ```
 
 4. Next, create an empty repository in GitHub. Do not add a README.md file in that process (leave that unchecked). You will see prompts for how to:
     - Create a new repository from the command line
@@ -72,10 +72,10 @@ git branch -M main
 5. Copy the SSH URL to your new repository, which will look something like `git@github.com:<account>/<repo>.git`
 6. Finally, add the remote origin and push your repo using that URL:
 
-```
-git remote add origin git@github.com:<account>/<repo>.git
-git push -u origin main
-```
+    ```
+    git remote add origin git@github.com:<account>/<repo>.git
+    git push -u origin main
+    ```
 
 ## Delete
 
