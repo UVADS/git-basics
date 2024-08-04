@@ -74,7 +74,7 @@ Then set up your authentication method (SSH keys or PAT) and configure as instru
 GitHub offers two ways to authenticate your local workstation with GitHub. Usernames and passwords are no longer an option,
 as they present security risks. Instead use one of these:
 
-- **SSH Keys** - the above walkthroughs used SSH keypairs to authenticate your computer to GitHub. These allow your pushes and puls, etc. to authenticate seamlessly to GitHub as a full owner of the repository.
+- **SSH Keys** - the above walkthroughs used SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository.
 - **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 ## First-time Configuration
@@ -84,7 +84,7 @@ Confirm your installation is working by issuing the `git` command from within yo
 The first time you use git you will encounter a couple of setup issues:
 
 - The first time you clone a repository from GitHub using a new ssh key you will get a "key fingerprint" approval request. You can safely say "Yes" to this request, which you will only be asked once.
-- The first time you try to commit code on your laptop using `git` you will be asked to configure two settings - your name and email. This is simply to identify you in the log of commits and changes. Here are the two settings; replace the values in quotes with your own info:
+- The first time you try to commit code on your laptop using `git` you will be asked to configure two global settings - your name and email. These settings identify you in the log of commits and changes. Here are the two settings; replace the values in quotes with your own info:
 
 
         git config --global user.name "Your Name"
