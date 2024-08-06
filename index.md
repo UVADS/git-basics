@@ -9,10 +9,10 @@ permalink: /
 # `git` in Data Science
 {: .fs-9 }
 
-How to set up, configure, and work with `git` and GitHub.
+Source Control Basics: How to set up, configure, and work with `git` and GitHub.
 {: .fs-6 .fw-300 }
 
-[Get started now](docs/setup/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Get started](docs/setup/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 
