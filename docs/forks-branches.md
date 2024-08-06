@@ -5,6 +5,15 @@ nav_order: 5
 ---
 # Branches Forks & Merges
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 Git enables software developers to copy an existing codebase and work with the copy alongside the original, without one interfering with the other. 
 
 - The easiest way to copy your entire project code and work with it is called a ["Branch"](#branches).

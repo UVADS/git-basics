@@ -6,6 +6,15 @@ nav_order: 3
 
 # Creating and Managing Git Repositories
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 Creating a new repository is often confusing to new users of Git and GitHub. Here is a simple explanation of the two options, with complete instructions on how to work with each.
 
 The `git` command displays these options within the `--help` documentation:
