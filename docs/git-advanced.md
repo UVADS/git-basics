@@ -118,7 +118,7 @@ Cherry picking is choosing a commit from one branch and applying it to another. 
 
 Take the example below. A developer has been working on the `main` branch, while a second developer began a new `nav` branch. The second developer fixed a bug in the `main` branch before moving on to other work, and the first developer would like to apply ONLY that bug fix to the `main` branch. 
 
-<img style="width:600px;align:left;" src="https://uvads.github.io/git-basics/images/git-cherry-pick.png">
+<img style="width:600px;align:left;" src="https://uvads.github.io/git-basics/assets/images/git-cherry-pick.png">
 
 This is an ideal case for using `git cherry-pick`. When cherry picking you use the hash of any individual commit, available from `git log` in the branch you want to pick from.
 

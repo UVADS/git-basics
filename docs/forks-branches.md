@@ -46,7 +46,7 @@ git branch -d <branch-name>
 
 ## Forks
 
-<img style="width:600px;align:left;" src="https://uvads.github.io/git-basics/images/fork-clone-upstream.png">
+<img style="width:600px;align:left;" src="https://uvads.github.io/git-basics/assets/images/fork-clone-upstream.png">
 
 A fork is a copy of someone else's repository. This is usually because you do not have access to push changes to the repository, or because the organization that controls it requires all changes come through forks and pull requests.
 
