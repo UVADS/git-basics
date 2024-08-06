@@ -118,7 +118,7 @@ Cherry picking is choosing a commit from one branch and applying it to another. 
 
 Take the example below. A developer has been working on the `main` branch, while a second developer began a new `nav` branch. The second developer fixed a bug in the `main` branch before moving on to other work, and the first developer would like to apply ONLY that bug fix to the `main` branch. 
 
-<img style="width:600px;align:left;" src="https://uvads.github.io/git-basics/assets/images/git-cherry-pick.png">
+<img src="https://uvads.github.io/git-basics/assets/images/git-cherry-pick.png">
 
 This is an ideal case for using `git cherry-pick`. When cherry picking you use the hash of any individual commit, available from `git log` in the branch you want to pick from.
 
@@ -181,7 +181,7 @@ destination	    git@github.com:mst3k/some-repo.git (push)
 
 In this video Scott Chacon, one of the co-founders and original developers of GitHub, talks about buried and advanced features in Git and GitHub.
 
-<a href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" target="_new"><img style="width:600px;align:left;" src="https://uvads.github.io/git-basics/assets/images/scott-chacon-git-talk.png"></a>
+<a href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" target="_new"><img src="https://uvads.github.io/git-basics/assets/images/scott-chacon-git-talk.png"></a>
 
 Topics include:
 

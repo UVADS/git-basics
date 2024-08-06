@@ -13,6 +13,8 @@ Source Control Basics: How to set up, configure, and work with `git` and GitHub.
 {: .fs-6 .fw-300 }
 
 [Get started](docs/setup/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Basic Commands](docs/git-basics/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Actions](docs/github-actions/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 
