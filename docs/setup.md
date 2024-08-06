@@ -4,16 +4,16 @@ title: 0 - Install & Setup
 nav_order: 2
 ---
 
-# Install & Set Up Git
+# Install and Set Up Git
 
 ### Contents
 
-- [Install \& Set Up Git](#install--set-up-git)
+- [Install and Set Up Git](#install-and-set-up-git)
     - [Contents](#contents)
   - [Command-Line Git](#command-line-git)
   - [Mac](#mac)
   - [Windows](#windows)
-- [Linux](#linux)
+  - [Linux](#linux)
   - [Authentication Options](#authentication-options)
   - [First-time Configuration](#first-time-configuration)
 
@@ -55,7 +55,7 @@ Using `ssh-keygen.exe` in `git-bash` creates a keypair successfully, but (appare
     <li>See the screencast above for a walkthrough.</li>
 </ol>
 
-# Linux
+## Linux
 
 Install `git` in a Linux distro with the built-in package manager:
 

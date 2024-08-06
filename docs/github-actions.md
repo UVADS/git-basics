@@ -42,7 +42,8 @@ To access Secrets for a repository:
 
 This example passes the branch name and several other secrets into a container, which clones the repository branch and performs a build against the code.
 
-Note it runs on pushes to `main` and `staging`, but also runs on a schedule at 8:00AM UTC each day.
+{: .note }
+Note this action runs on pushes to the `main` and `staging` branches, but also runs on a schedule at 8:00AM UTC each day.
 
 > .github/workflows/build.yaml
 
@@ -85,7 +86,8 @@ jobs:
 
 This GitHub Action detects any tagged push (matching the format `*.*`, i.e. 1.4, 13.9, etc.) and performs a multi-architecture container build and push for both amd64 and arm64 platforms.
 
-Note at the end the Action performs a "Remote Dispatch" where it updates an external repository to set a new value, which in turn triggers a deployment.
+{: .note }
+Note at the end the Action performs a "Remote Dispatch" where it updates a separate repository with a new value, which in turn triggers a deployment from that repository.
 
 > .github/workflows/deploy.yaml
 
