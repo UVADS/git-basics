@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 3 - Forks & Branches
+title: 3 - Branches, Forks & Merges
 nav_order: 5
 ---
-# Branches Forks & Merges
+# Branches, Forks & Merges
 
 <details open markdown="block">
   <summary>
@@ -82,4 +82,48 @@ origin  git@github.com:UVADS/git-basics.git (push)
 ```
 In this example, `origin` is configured for both pulling and pushing.
 
-## Merges / Pull Requests
+## Merges and Pull Requests
+
+### Merge
+
+A **merge** folds all the changes from one branch into another. 
+
+For example, imagine a project where you have a stable, working `main` branch but have added some new functionality to an experimental `test` branch. Everything works well and now you'd like to bring those new features into the `main` branch?
+
+To merge such changes:
+
+1. Make sure all changes from the experimental branch (aka `test`) have been added and committed. 
+
+        git add .
+        git commit -m "Tracking changes before merge ..."
+
+2. Switch to the branch you want to pull changes _into_:
+
+        git checkout main
+
+3. Merge the changes from the experimental branch into the current branch:
+
+        git merge test
+
+### Pull Requests
+
+Pull Requests, also known as "PRs" are a special collaborative feature for handling merges within GitHub. A PR extends and expands upon the process of a merge:
+
+- It allows for other users to review changes from one source before they are merged into the main project branch.
+- It allows for merges to occur from remote forks of the repository, rather than direct branches of the project itself.
+- It exposes every specific change, at the code level, for review and comment.
+- PRs will perform a basic review of the proposed change to see if they will introduce conflicts.
+
+One of the most common development patterns that use PRs is found in open source software projects. Typically contributors to OSS projects will fork the repository, add and commit their changes _to their fork_ and then submit a Pull Requests with the source project, asking for their changes to be reviewed and folded in.
+
+Pull Requests in GitHub can be greatly automated, with elaborate build and performance testing, checking for specific criteria, linting the code to check for adherence to standards, and so forth. These automations can, ideally, nudge contributors in the right direction and help reduce much of the overhead if a human editor had to review and evaluate the changes manually.
+
+### Merge Conflicts, aka "Merge Hell"
+
+So-called "merge hell" is a term used to describe the difficult process of untangling code that has caused issues during the merging of code changes from multiple branches. 
+
+This occurs most often when two or more developers have been working on the same file, and possibly on the same segment of code, without frequent adds/commits/pushes back to GitHub. This means that when `git` tries to merge these various changes into a single block, it cannot decipher what change should get priority. 
+
+The way out of a difficult merge conflict is to identify the file(s) affected, and then manually sort out the changes to be kept or discarded.
+
+> [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
