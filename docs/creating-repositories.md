@@ -41,11 +41,11 @@ Assuming you are authenticating to GitHub using SSH keys, here are the steps to 
     ```
 
 5. This will create a new subdirectory with the name of the repository. You can change the name of the directory if you like.
-6. If there are multiple branches in the GitHub repository and you want to clone them all, use these commands:
+6. If there are multiple branches in the GitHub repository and you want to clone them all, use these commands (using this repository as an example):
 
     ```
     git clone git@github.com:UVADS/git-basics.git
-    cd <repository-name>
+    cd git-basics/
     git fetch --all
     for branch in `git branch -r | grep -v HEAD`; do
       git checkout -b $branch $branch
