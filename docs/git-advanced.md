@@ -181,7 +181,7 @@ destination	    git@github.com:mst3k/some-repo.git (push)
 
 In this video Scott Chacon, one of the co-founders and original developers of GitHub, talks about buried and advanced features in Git and GitHub.
 
-<a href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" target="_new"><img style="width:600px;align:left;" src="../images/scott-chacon-git-talk.png"></a>
+<a href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" target="_new"><img style="width:600px;align:left;" src="../assets/images/scott-chacon-git-talk.png"></a>
 
 Topics include:
 
