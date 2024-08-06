@@ -6,13 +6,14 @@ nav_order: 2
 
 # Install and Set Up Git
 
-- [Install and Set Up Git](#install-and-set-up-git)
-  - [Command-Line Git](#command-line-git)
-  - [Mac](#mac)
-  - [Windows](#windows)
-  - [Linux](#linux)
-  - [Authentication Options](#authentication-options)
-  - [First-time Configuration](#first-time-configuration)
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 Setting up git and authenticating yourself to GitHub is an important first step in managing and tracking your code and various projects. Follow the steps for your platform below
 

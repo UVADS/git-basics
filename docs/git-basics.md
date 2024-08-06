@@ -8,11 +8,14 @@ nav_order: 4
 
 This page covers the most essential commands when tracking your code using `git` and GitHub.
 
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
 {:toc}
+</details>
 
 
 ## Diff
