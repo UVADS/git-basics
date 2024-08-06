@@ -23,6 +23,15 @@ GitHub Actions is highly customizable and integrates seamlessly with other GitHu
 
 > [**Learn More about GitHub Actions**](https://github.com/features/actions)
 
+## Use Cases for Data Science
+
+Data Scientists tend to build reusable scripts and components to be assembled in various pipelines. Such pipelines might ingest and clean data, or
+
+Think of Actions as a programmable process to check for accuracy or errors, to build or stage software, to launch pipelines, etc. Actions may contain if/then logic, multiple simultaneous processes, they may reach out to external data sources, other git repositories, or APIs.
+
+We suggest adopting Actions first with simple use cases and then building toward longer and more complex workflows.
+
+
 ## Credentials & Secrets
 
 GitHub Actions often require credentials in order to do some of their work. Consider, for example, a container that is built by an Action that needs to be pushed to Docker Hub. This push requires credentials in order to authenticate to Docker Hub.
