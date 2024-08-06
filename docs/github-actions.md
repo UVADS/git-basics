@@ -6,6 +6,15 @@ nav_order: 7
 
 # GitHub Actions
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) service provided by GitHub. It allows developers to automate various tasks and workflows within their repositories. With GitHub Actions, you can define custom workflows using YAML files that specify the sequence of steps to be executed when certain events occur, such as code pushes, pull requests, or releases. 
 
 These workflows can include tasks like:

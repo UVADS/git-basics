@@ -6,10 +6,7 @@ nav_order: 2
 
 # Install and Set Up Git
 
-### Contents
-
 - [Install and Set Up Git](#install-and-set-up-git)
-    - [Contents](#contents)
   - [Command-Line Git](#command-line-git)
   - [Mac](#mac)
   - [Windows](#windows)
