@@ -30,6 +30,7 @@ GitHub Actions helps streamline the development process by automating repetitive
 
 GitHub Actions is highly customizable and integrates seamlessly with other GitHub features and third-party tools. It provides a wide range of pre-built actions and workflows in the GitHub Marketplace, making it easy for developers to adopt and extend existing configurations.
 
+{: .success :}
 > [**Learn More about GitHub Actions**](https://github.com/features/actions)
 
 ## Use Cases for Data Science

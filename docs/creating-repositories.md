@@ -93,7 +93,8 @@ A fork is a copy of someone else’s repository. This is usually because you do 
 
 When you fork a repository, a complete copy is made in your own account (or Organization) in GitHub. This gives you complete control to clone and work with the code freely. You own the forked copy, so you can make additions, new functionality, and commit+push to your own fork.
 
-[More on Forks](docs/forks-branches/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+{: .success :}
+[**Learn more about Forks**](docs/forks-branches/)
 
 ## Delete
 

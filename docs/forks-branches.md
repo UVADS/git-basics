@@ -82,7 +82,7 @@ origin  git@github.com:UVADS/git-basics.git (push)
 ```
 In this example, `origin` is configured for both pulling and pushing.
 
-{: .note }
+{: .success }
 [Learn more](/docs/git-advanced/#rename-origin) about naming upstream and downstream remotes
 
 ## Merges and Pull Requests
