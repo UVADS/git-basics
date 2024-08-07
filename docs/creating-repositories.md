@@ -86,6 +86,14 @@ To initialize a local `git` repository and then connect it with GitHub:
     git push -u origin main
     ```
 
+## Fork
+
+A fork is a copy of someone else’s repository. This is usually because you do not have access to push changes to the repository, or because the organization that controls it requires all changes come through forks and pull requests.
+
+When you fork a repository, a complete copy is made in your own account (or Organization) in GitHub. This gives you complete control to clone and work with the code freely. You own the forked copy, so you can make additions, new functionality, and commit+push to your own fork.
+
+[More on Forks](docs/forks-branches/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ## Delete
 
 To delete a repository you have both in GitHub and on your local computer, do the following:
