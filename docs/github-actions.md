@@ -39,6 +39,8 @@ Data Scientists tend to build reusable scripts and components to be assembled in
 
 Think of Actions as a programmable process to check for accuracy or errors, to build or stage software, to launch pipelines, etc. Actions may contain if/then logic, multiple simultaneous processes, they may reach out to external data sources, other git repositories, or APIs.
 
+In the examples below, notice that the Action is defined in a YAML file. Multiple action definitions may exist for a single repository, and may be defined to run in parallel, or in a specific order.
+
 We suggest adopting Actions first with simple use cases and then building toward longer and more complex workflows.
 
 
@@ -57,57 +59,13 @@ To access Secrets for a repository:
 5. Create a new repository or organization secret. Each consists of a key-value pair similar to an `env` variable.
 
 
-## Example 1 - Run a container against the repository contents with every push
-
-This example passes the branch name and several other secrets into a container, which clones the repository branch and performs a build against the code.
-
-{: .note }
-Note this action runs on pushes to the `main` and `staging` branches, but also runs on a schedule at 8:00AM UTC each day.
-
-> <code>.github/workflows/build.yaml</code>
-
-```
-name: Build CI
-
-on:
-  push:
-    branches:
-    - 'main'
-    - 'staging'
-  schedule:
-    - cron: '0 8 * * *'
-
-jobs:
-  Build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: nelonoel/branch-name@v1
-      env:
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-    - run: echo ${BRANCH_NAME}
-    - name: Set ENV vars
-      env:
-        BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-        BUCKET_NAME_STAGING: ${{ secrets.BUCKET_NAME_STAGING }}
-        DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
-        STAGING_DISTRIBUTION_ID: ${{ secrets.STAGING_DISTRIBUTION_ID }}
-        MAX_AGE: ${{ secrets.MAX_AGE }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      run: echo $BUCKET_NAME
-    - name: Get HUGO container
-      run: docker pull ghcr.io/uvarc/hugo-build:v2
-    - name: Run HUGO container
-      run: docker run -e BRANCH=$BRANCH_NAME -e DISTRIBUTION_ID=${{ secrets.DISTRIBUTION_ID }} -e BUCKET_NAME_STAGING=${{ secrets.BUCKET_NAME_STAGING }} -e STAGING_DISTRIBUTION_ID=${{ secrets.STAGING_DISTRIBUTION_ID }} -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e MAX_AGE=${{ secrets.MAX_AGE}} ghcr.io/uvarc/hugo-build:v2 /root/build-site.sh uvarc/rc-website hugo-0.80.0-ext
-```
-
-## Example 2 - Perform tests against your code
+## Example 1 - Perform tests against your code
 
 This GitHub Action tests your code for basic errors using [`pytest`](https://docs.pytest.org/en/stable/) against multiple versions of Python. This requires you write the appropriate test file(s) to demonstrate success/failure in your application.
 
 In industry, it is **extremely common** to run production code through dozens or hundreds of various tests before it is released. While Data Science does not generally impact production systems, it is to no one's advantage to release broken, buggy code in this setting.
 
-> .github/workflows/python-version-testing.yaml
+> `.github/workflows/python-version-testing.yaml`
 
 ```
 name: Python Testing
@@ -144,6 +102,51 @@ jobs:
 {: .success }
 Learn more about [**Building and Testing in Python**](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) using GitHub Actions.
 
+
+## Example 2 - Run a container against the repository contents with every push
+
+This example passes the branch name and several other secrets into a container, which clones the repository branch and performs a build against the code.
+
+{: .note }
+Note this action runs on pushes to the `main` and `staging` branches, but also runs on a schedule at 8:00AM UTC each day.
+
+> `.github/workflows/build.yaml`
+
+```
+name: Build CI
+
+on:
+  push:
+    branches:
+    - 'main'
+    - 'staging'
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: nelonoel/branch-name@v1
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+    - run: echo ${BRANCH_NAME}
+    - name: Set ENV vars
+      env:
+        BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+        BUCKET_NAME_STAGING: ${{ secrets.BUCKET_NAME_STAGING }}
+        DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+        STAGING_DISTRIBUTION_ID: ${{ secrets.STAGING_DISTRIBUTION_ID }}
+        MAX_AGE: ${{ secrets.MAX_AGE }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: echo $BUCKET_NAME
+    - name: Get HUGO container
+      run: docker pull ghcr.io/uvarc/hugo-build:v2
+    - name: Run HUGO container
+      run: docker run -e BRANCH=$BRANCH_NAME -e DISTRIBUTION_ID=${{ secrets.DISTRIBUTION_ID }} -e BUCKET_NAME_STAGING=${{ secrets.BUCKET_NAME_STAGING }} -e STAGING_DISTRIBUTION_ID=${{ secrets.STAGING_DISTRIBUTION_ID }} -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e MAX_AGE=${{ secrets.MAX_AGE}} ghcr.io/uvarc/hugo-build:v2 /root/build-site.sh uvarc/rc-website hugo-0.80.0-ext
+```
+
 ## Example 3 - Build and push a container with all new tagged releases
 
 This GitHub Action detects any tagged push (matching the format `*.*`, i.e. 1.4, 13.9, 989.14, etc.) and performs a multi-architecture container build and push for both amd64 and arm64 platforms.
@@ -151,7 +154,7 @@ This GitHub Action detects any tagged push (matching the format `*.*`, i.e. 1.4,
 {: .note }
 Note at the end the Action performs a "Remote Dispatch" where it updates a separate repository with a new value, which in turn triggers a deployment from that repository.
 
-> .github/workflows/deploy.yaml
+> `.github/workflows/deploy.yaml`
 
 ```
 name: Container Build CICD
