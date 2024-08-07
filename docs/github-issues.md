@@ -23,5 +23,5 @@ In the example above, note a few details:
 
 GitHub Issues provides a structured and transparent way for teams to organize their work, enabling efficient project management. It offers features such as customizable labels, milestones, and project boards to help teams track progress, set priorities, and ensure that all relevant stakeholders are informed about the status and resolution of each issue. This collaborative and integrated approach enhances communication and facilitates a smooth development process by keeping everyone aligned on the project's goals and tasks.
 
-{: .more :}
+{: .success :}
 [**Learn more about GitHub Issues**](https://docs.github.com/en/issues)

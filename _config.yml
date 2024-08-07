@@ -144,11 +144,11 @@ callouts:
   important:
     title: Important
     color: blue
+  success:
+    title: More
+    color: green
   new:
     title: New
-    color: green
-  more:
-    title: More
     color: green
   note:
     title: Note
