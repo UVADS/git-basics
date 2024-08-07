@@ -105,6 +105,17 @@ To merge such changes:
 
         git merge test
 
+Sometimes a developer may be working on a new experimental branch for some time and does not want it to diverge greatly from the main branch where normal fixes and updates occur.
+
+To stay current, he will probably want to merge those changes from `main` into his development branch:
+
+    git checkout main
+    git pull origin main    # get current
+    git checkout dev
+    git merge main          # merge in main
+
+At this point his code will be in sync with the primary branch. This means the new features and changes he is developing are less likely to conflict when merged back into `main`. When developers keep a development branch isolated it gets behind, which means merge conflicts will be much more likely.
+
 ### Pull Requests
 
 Pull Requests, also known as "PRs" are a special collaborative feature for handling merges within GitHub. A PR extends and expands upon the process of a merge:
@@ -166,10 +177,12 @@ To remediate this, open the file and look for the merge markers:
     -Alexander
     >>>>>>> master
 
-Note the `<<<<<<` and `>>>>>>` markers, which indicate the beginning and end of the conflicted section. Sometimes you will see more than one section.
+Note the `<<<<<<` and `>>>>>>` markers, which indicate the beginning and end of the conflicted section. Sometimes you will see more than one section. Each section must be addressed by hand. If multiple files are affected, each must be resolved.
 
 The content between those markers also contains `======` which denotes the break between the two branches - the section above this marker is the destination you are trying to merge _into_ and the section below it is the source branch you are trying to merge in.
 
 To resolve this: Clean up the content between the marge markers, leaving only the content you want. Be sure to remove the markers themselves, i.e. all instances of `<<<<`, `>>>>`, and `====`.
+
+Then, add and commit the changes back to the desired branch, and push.
 
 > [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
