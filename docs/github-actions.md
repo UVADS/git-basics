@@ -64,7 +64,7 @@ This example passes the branch name and several other secrets into a container, 
 {: .note }
 Note this action runs on pushes to the `main` and `staging` branches, but also runs on a schedule at 8:00AM UTC each day.
 
-> .github/workflows/build.yaml
+> <code>.github/workflows/build.yaml</code>
 
 ```
 name: Build CI
