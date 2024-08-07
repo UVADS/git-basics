@@ -26,6 +26,10 @@ start a working area (see also: git help tutorial)
    init      Create an empty Git repository or reinitialize an existing one
 ```
 
+{: .warning :}
+It is important to remember that when **cloning** or **forking** an existing repository, you will inherit the _entire history_ of all previous commits. This is a feature: Newcomers to a project are not restricted to only the history after their arrival.
+
+
 ## Clone
 
 `git clone` is the simplest way to begin working with a repository you want connected to GitHub. The `clone` operation clones an entire remote repository to your local workstation.
@@ -54,6 +58,7 @@ Assuming you are authenticating to GitHub using SSH keys, here are the steps to 
     ```
 
 7. Note that if you create a new, empty repository within GitHub, it is helpful to tick the box to include a `README.md` file by default. This ensures that a default branch (named `main`) will be created for you.
+
 
 ## Init
 
