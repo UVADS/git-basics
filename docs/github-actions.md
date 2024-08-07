@@ -67,37 +67,35 @@ In industry, it is **extremely common** to run production code through dozens or
 
 > `.github/workflows/python-version-testing.yaml`
 
-```
-name: Python Testing
+    name: Python Testing
 
-on: [push]
+    on: [push]
 
-jobs:
-  build:
+    jobs:
+      build:
 
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # Test against multiple versions of Python
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            # Test against multiple versions of Python
+            python-version: ["3.9", "3.10", "3.11", "3.12"]
 
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python $`{{ matrix.python-version }}`
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-      # Install packages you need for the testing
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      # Finally run a test unit using pytest / ruff / tox, etc.
-      - name: Test with pytest
-        run: |
-          pip install pytest pytest-cov
-          pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-```
+        steps:
+          - uses: actions/checkout@v4
+          - name: Set up Python ${{ matrix.python-version }}
+            uses: actions/setup-python@v5
+            with:
+              python-version: ${{ matrix.python-version }}
+          # Install packages you need for the testing
+          - name: Install dependencies
+            run: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
+          # Finally run a test unit using pytest / ruff / tox, etc.
+          - name: Test with pytest
+            run: |
+              pip install pytest pytest-cov
+              pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
 
 {: .success }
 Learn more about [**Building and Testing in Python**](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) using GitHub Actions.
