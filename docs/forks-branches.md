@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 3 - Branches, Forks & Merges
+title: 3 - Branches & Merges
 nav_order: 5
 ---
-# Branches, Forks & Merges
+# Branches & Merges
 
 <details open markdown="block">
   <summary>
