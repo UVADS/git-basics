@@ -112,7 +112,7 @@ Pull Requests, also known as "PRs" are a special collaborative feature for handl
 - It allows for other users to review changes from one source before they are merged into the main project branch.
 - It allows for merges to occur from remote forks of the repository, rather than direct branches of the project itself.
 - It exposes every specific change, at the code level, for review and comment.
-- PRs will perform a basic review of the proposed change to see if they will introduce conflicts.
+- PRs can perform basic automated reviews of the proposed change to see if they will introduce conflicts.
 
 One of the most common development patterns that use PRs is found in open source software projects. Typically contributors to OSS projects will fork the repository, add and commit their changes _to their fork_ and then submit a Pull Requests with the source project, asking for their changes to be reviewed and folded in.
 
@@ -125,5 +125,51 @@ So-called "merge hell" is a term used to describe the difficult process of untan
 This occurs most often when two or more developers have been working on the same file, and possibly on the same segment of code, without frequent adds/commits/pushes back to GitHub. This means that when `git` tries to merge these various changes into a single block, it cannot decipher what change should get priority. 
 
 The way out of a difficult merge conflict is to identify the file(s) affected, and then manually sort out the changes to be kept or discarded.
+
+#### Example
+
+Imagine two developers work on the same file in separate branches, and add-commit-push their work back to GitHub. No errors would be indicated at this time since the differences in the file exist in separate branches.
+
+But then Developer A tries to merge their colleague's (Developer B) changed branch into hers:
+
+    git checkout devBbranch
+    git pull origin devBranch
+    git checkout devAbranch
+    git merge devBbranch
+
+And then encounter this error, indicating a merge conflict:
+
+    Auto-merging participants.txt
+    CONFLICT (content): Merge conflict in participants.txt
+    Automatic merge failed; fix conflicts and then commit the result.
+
+The bad news is there is a conflict. The good news is that `git` reveals the file(s) where the conflicts exist. In this case, the conflict is in the `participants.txt` file.
+
+To remediate this, open the file and look for the merge markers:
+
+    Finance team
+    -Charles
+    -Lisa
+    -John
+    <<<<<<< HEAD
+    -Stacy
+    -Alexander
+
+    Marketing team
+    - Collins
+    - Linda
+    - Patricia
+    - Morgan
+    - Amanda
+    =======
+    -Stacy
+    -Alexander
+    >>>>>>> master
+
+Note the `<<<<<<` and `>>>>>>` markers, which indicate the beginning and end of the conflicted section. Sometimes you will see more than one section.
+
+The content between those markers also contains `======` which denotes the break between the two branches - the section above this marker is the destination you are trying to merge _into_ and the section below it is the source branch you are trying to merge in.
+
+To resolve this: Clean up the content between the marge markers, leaving only the content you want. Be sure to remove the markers themselves, i.e. all instances of `<<<<`, `>>>>`, and `====`.
 
 > [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
