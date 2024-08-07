@@ -8,6 +8,8 @@ nav_order: 6
 
 GitHub Issues is a robust and collaborative issue tracking system that helps teams manage and prioritize tasks, bugs, and feature requests within a GitHub repository. Users can create issues to report problems, suggest enhancements, or outline new features. Each issue acts as a centralized hub for discussions, allowing team members to comment, share insights, and collaborate on problem-solving. Additionally, issues can be assigned to specific team members, labeled for categorization, and linked to pull requests, fostering a seamless integration with the overall development workflow.
 
+Each repository in GitHub comes with an Issues page by default:
+
 ![GitHub Issues](https://www.w3.org/International/i18n-activity/guidelines/images/issue-list.png)
 
 In the example above, note a few details:
