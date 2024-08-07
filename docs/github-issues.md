@@ -16,7 +16,7 @@ In the example above, note a few details:
 
 - There are 16 open issues and 2 closed.
 - Each issue is assigned a unique number.
-- Each issue can be tagged (i.e. bugfix, feature, etc.) Tags can be customized.
+- Each issue can be tagged (i.e. bug, question, enhancement, etc.) Tags can be customized.
 - Each issue becomes a thread for comments and  automated processes (if desired). Issues can be scoped to specific files or even lines of code.
 - Issues can be assigned to team members for tracking.
 
