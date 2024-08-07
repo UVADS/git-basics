@@ -47,7 +47,7 @@ In order to focus on specific operations and workflow steps using `git` this doc
 
 Data scientists and software developers who write code regularly *greatly* tend to use the terminal/command-line to interact with `git`. This primer assumes this and does not address various GUI tools for working with `git` and GitHub.
 
-## Mac
+### Mac
 
 **Here's a walkthrough for Mac users on how to set up git, SSH keys, and GitHub.**
 
@@ -61,7 +61,7 @@ Data scientists and software developers who write code regularly *greatly* tend 
 </ol>
 
 
-## Windows
+### Windows
 
 **Here's a walkthrough for Windows users on how to set up git-bash, SSH keys, and GitHub.**
 
@@ -79,7 +79,7 @@ Using `ssh-keygen.exe` in `git-bash` creates a keypair successfully, but (appare
     <li>See the screencast above for a walkthrough.</li>
 </ol>
 
-## Linux
+### Linux
 
 Install `git` in a Linux distro with the built-in package manager:
 
