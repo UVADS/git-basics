@@ -67,35 +67,39 @@ In industry, it is **extremely common** to run production code through dozens or
 
 > `.github/workflows/python-version-testing.yaml`
 
-    name: Python Testing
+```
+{% raw %}
+name: Python Testing
 
-    on: [push]
+on: [push]
 
-    jobs:
-      build:
+jobs:
+  build:
 
-        runs-on: ubuntu-latest
-        strategy:
-          matrix:
-            # Test against multiple versions of Python
-            python-version: ["3.9", "3.10", "3.11", "3.12"]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # Test against multiple versions of Python
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
-        steps:
-          - uses: actions/checkout@v4
-          - name: Set up Python ${{ matrix.python-version }}
-            uses: actions/setup-python@v5
-            with:
-              python-version: ${{ matrix.python-version }}
-          # Install packages you need for the testing
-          - name: Install dependencies
-            run: |
-              python -m pip install --upgrade pip
-              pip install -r requirements.txt
-          # Finally run a test unit using pytest / ruff / tox, etc.
-          - name: Test with pytest
-            run: |
-              pip install pytest pytest-cov
-              pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # Install packages you need for the testing
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      # Finally run a test unit using pytest / ruff / tox, etc.
+      - name: Test with pytest
+        run: |
+          pip install pytest pytest-cov
+          pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+{% endraw %}
+```
 
 {: .success }
 Learn more about [**Building and Testing in Python**](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) using GitHub Actions.
@@ -111,6 +115,7 @@ Note this action runs on pushes to the `main` and `staging` branches, but also r
 > `.github/workflows/build.yaml`
 
 ```
+{% raw %}
 name: Build CI
 
 on:
@@ -143,6 +148,7 @@ jobs:
       run: docker pull ghcr.io/uvarc/hugo-build:v2
     - name: Run HUGO container
       run: docker run -e BRANCH=$BRANCH_NAME -e DISTRIBUTION_ID=${{ secrets.DISTRIBUTION_ID }} -e BUCKET_NAME_STAGING=${{ secrets.BUCKET_NAME_STAGING }} -e STAGING_DISTRIBUTION_ID=${{ secrets.STAGING_DISTRIBUTION_ID }} -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e MAX_AGE=${{ secrets.MAX_AGE}} ghcr.io/uvarc/hugo-build:v2 /root/build-site.sh uvarc/rc-website hugo-0.80.0-ext
+{% endraw %}
 ```
 
 ## Example 3 - Build and push a container with all new tagged releases
@@ -155,6 +161,7 @@ Note at the end the Action performs a "Remote Dispatch" where it updates a separ
 > `.github/workflows/deploy.yaml`
 
 ```
+{% raw %}
 name: Container Build CICD
 
 on:
@@ -207,4 +214,5 @@ jobs:
             -H 'Accept: application/vnd.github.everest-preview+json' \
             -H "Authorization: token ${{ secrets.GHCR_PAT }}" \
             --data '{"event_type": "${{ env.IMAGE_NAME }} update to ${{ env.IMAGE_TAG }}", "client_payload": { "service": "${{ env.SVC_NAME }}", "version": "${{ env.IMAGE_TAG }}" }}'
+{% endraw %}
 ```
