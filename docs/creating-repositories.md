@@ -2,6 +2,7 @@
 layout: default
 title: 1 - Repositories
 nav_order: 3
+toc: true
 ---
 
 # Creating and Managing Git Repositories
