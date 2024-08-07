@@ -6,18 +6,53 @@ nav_order: 8
 
 # Advanced `git`
 
-Some deeper features you may find useful:
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
-- [Advanced `git`](#advanced-git)
-  - [Git Stash](#git-stash)
-  - [Signing commits](#signing-commits)
-  - [Resets and reverting](#resets-and-reverting)
-  - [Rebase](#rebase)
-  - [Cherry-pick](#cherry-pick)
-  - [Rename `origin`](#rename-origin)
-  - [Bonus - So You Think You Know Git](#bonus---so-you-think-you-know-git)
+## Tag
 
-## Git Stash
+Commits can be tagged by the developer, as a way of marking a specific commit. This is useful in preparation for a version release, or simply for marking a particular goal has been reached.
+
+Tags appear on the main code page of a repository.
+
+Useful commands for tagging in `git`:
+
+- List any existing tags within a repository
+
+        git tag
+
+- Tag the last commit
+
+        git tag v1.0
+
+- Push a specific tag back to origin (i.e. GitHub, etc.)
+
+        git push origin main v1.0
+
+- Delete a local tag
+
+        git tag -d v1.0
+
+- Delete a remote tag in GitHub
+
+        git push --delete origin v1.0
+
+- Learn more about a specific tag
+
+        git show v1.0
+
+Tags can be signed by the developer creating them. They can contain annotations (longer comments), and the author name and date are captured in the `git` database whenever a tag is created or modified.
+
+{: .success :}
+[**Learn more about tagging**](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+## Stash
 
 `git stash` is a useful command for setting changes aside while you want to perform another `git` operation, such as a `add`, `push`, `pull`, etc.
 
