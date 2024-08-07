@@ -6,8 +6,6 @@ description: "Working with git and GitHub in Data Science."
 permalink: /
 ---
 
-[![Build Jekyll site](https://github.com/UVADS/git-basics/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/UVADS/git-basics/actions/workflows/jekyll-gh-pages.yml)
-
 # `git` in Data Science
 {: .fs-9 }
 
