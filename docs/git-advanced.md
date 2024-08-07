@@ -49,7 +49,7 @@ Useful commands for tagging in `git`:
 
 Tags can be signed by the developer creating them. They can contain annotations (longer comments), and the author name and date are captured in the `git` database whenever a tag is created or modified.
 
-Tags can also be incredibly useful when coupled with automations in [**GitHub Actions**](/docs/github-actions/). For instance, a test suite or build can be invoked when specific tags occur, instead of with every push.
+Tags can also be incredibly useful when coupled with automations in [**GitHub Actions**](/docs/github-actions/). For instance, a test suite or build can be invoked when specific tags occur, instead of with every push or PR.
 
 {: .success :}
 [**Learn more about tagging**](https://git-scm.com/book/en/v2/Git-Basics-Tagging)

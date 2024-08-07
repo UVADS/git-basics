@@ -101,9 +101,52 @@ jobs:
       run: docker run -e BRANCH=$BRANCH_NAME -e DISTRIBUTION_ID=${{ secrets.DISTRIBUTION_ID }} -e BUCKET_NAME_STAGING=${{ secrets.BUCKET_NAME_STAGING }} -e STAGING_DISTRIBUTION_ID=${{ secrets.STAGING_DISTRIBUTION_ID }} -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e MAX_AGE=${{ secrets.MAX_AGE}} ghcr.io/uvarc/hugo-build:v2 /root/build-site.sh uvarc/rc-website hugo-0.80.0-ext
 ```
 
-## Example 2 - Build and push a container with all new tagged releases
+## Example 2 - Perform tests against your code
 
-This GitHub Action detects any tagged push (matching the format `*.*`, i.e. 1.4, 13.9, etc.) and performs a multi-architecture container build and push for both amd64 and arm64 platforms.
+This GitHub Action tests your code for basic errors using `pytest` against multiple versions of Python. This requires you write the appropriate test file(s) to demonstrate success/failure in your application.
+
+In industry, it is **extremely common** to run production code through dozens or hundreds of various tests before it is released. While Data Science does not generally impact production systems, it is to no one's advantage to release broken, buggy code in this setting.
+
+> .github/workflows/python-version-testing.yaml
+
+```
+name: Python Testing
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # Test against multiple versions of Python
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # Install packages you need for the testing
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      # Finally run a test unit using pytest / ruff / tox, etc.
+      - name: Test with pytest
+        run: |
+          pip install pytest pytest-cov
+          pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+```
+
+{: .success }
+Learn more about [**Building and Testing in Python**](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) using GitHub Actions.
+
+## Example 3 - Build and push a container with all new tagged releases
+
+This GitHub Action detects any tagged push (matching the format `*.*`, i.e. 1.4, 13.9, 989.14, etc.) and performs a multi-architecture container build and push for both amd64 and arm64 platforms.
 
 {: .note }
 Note at the end the Action performs a "Remote Dispatch" where it updates a separate repository with a new value, which in turn triggers a deployment from that repository.
