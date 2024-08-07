@@ -164,7 +164,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jekyll-include-cache
-  - jekyll-toc
 
 kramdown:
   syntax_highlighter_opts:
@@ -180,7 +179,3 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
-
-toc:
-  min_level: 2 # default: 1
-  max_level: 5 # default: 6
