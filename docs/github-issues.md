@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 4 - GitHub Issues
-nav_order: 6
+title: 5 - GitHub Issues
+nav_order: 7
 ---
 
 # GitHub Issues
