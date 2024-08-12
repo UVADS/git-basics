@@ -51,7 +51,7 @@ Data scientists and software developers who write code regularly *greatly* tend 
 
 **Here's a walkthrough for Mac users on how to set up git, SSH keys, and GitHub.**
 
-[![Install SSH Keys in Git using a Mac](https://i.ytimg.com/vi/rajlGZ3w4OU/maxresdefault.jpg)](https://www.youtube.com/embed/rajlGZ3w4OU?si=UPknm4ygzhenNrRN)
+[![Install SSH Keys in Git using a Mac](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
 
 <ol style="list-style-type: decimal;">
     <li>Install Git using the instructions at the following link. A git GUI version is optional, but the command line version is required for this course: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>&nbsp;</li>
