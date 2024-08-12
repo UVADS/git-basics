@@ -51,8 +51,6 @@ Data scientists and software developers who write code regularly *greatly* tend 
 
 **Here's a walkthrough for Mac users on how to set up git, SSH keys, and GitHub.**
 
-[![Install SSH Keys in Git using a Mac](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
-
 <ol style="list-style-type: decimal;">
     <li>Install Git using the instructions at the following link. A git GUI version is optional, but the command line version is required for this course: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>&nbsp;</li>
     <li>Check that git is installed in your environment by issuing the <code>git</code> command.</li>
@@ -95,11 +93,12 @@ Then set up your authentication method (SSH keys or PAT) and configure as instru
 
 ## Authentication Options
 
-GitHub offers two ways to authenticate your local workstation with GitHub. Usernames and passwords are no longer an option,
-as they present security risks. Instead use one of these:
+GitHub offers two ways to authenticate your local workstation with GitHub. Usernames and passwords are no longer an option, as they present security risks. Instead you can use SSH keys or Tokens. We recommend you use the latter.
 
 - **SSH Keys** - the above walkthroughs used SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository.
 - **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+
+[![Use a Personal Access Token with GitHub](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
 
 ## First-time Configuration
 
