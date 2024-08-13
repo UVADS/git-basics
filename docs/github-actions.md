@@ -63,7 +63,7 @@ To access Secrets for a repository:
 
 This GitHub Action tests your code for basic errors using [`pytest`](https://docs.pytest.org/en/stable/) against multiple versions of Python. This requires you write the appropriate test file(s) to demonstrate success/failure in your application.
 
-In industry, it is **extremely common** to run production code through dozens or hundreds of various tests before it is released. While Data Science does not generally impact production systems, it is to no one's advantage to release broken, buggy code in this setting.
+In industry, it is **extremely common** to run production code through dozens or even hundreds of various tests before it is released. While Data Science does not generally impact production systems, it is to no one's advantage to release broken, buggy code in this setting.
 
 > `.github/workflows/python-version-testing.yaml`
 
