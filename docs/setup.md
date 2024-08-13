@@ -73,7 +73,8 @@ The first time you use git you will encounter a couple of setup issues:
 
 GitHub offers two ways to authenticate your local computer to GitHub. Usernames and passwords are no longer an option, as they present security risks. Instead you can use SSH keys or Tokens. We recommend you use a token.
 
-- **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
-- **SSH Keys** - the above walkthroughs used SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository.
+- **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). Or watch the video below:
 
-[![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
+    [![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
+
+- **SSH Keys** - the above walkthroughs used SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository.
