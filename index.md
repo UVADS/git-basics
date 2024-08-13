@@ -33,7 +33,7 @@ Source control is the process of tracking changes and versions of electronic fil
 
 ## Source Control in Data Science
 
-Data aggregation, cleaning, pipelines and ML models all rely on software in order to operate. Responsible software management depends on well-managed code, versioning, prioritizing bugs, features, and user issues. Further, modern platforms and infrastructure tend to favor code-driven tests, builds, deployment, and management.
+Data aggregation, cleaning, pipelines and ML models all rely on software in order to operate. Responsible software management depends on well-managed code, versioning, prioritizing bugs, features, and user issues. Further, modern platforms and infrastructure tend to favor code-driven tests, builds, deployments, and management. Code can be used to define all the layers of effort across teams of engineers and data scientists.
 
 Which is to say: Code is fundamental to our work, and it would be risky, inefficient, and impractical not to use source control.
 
