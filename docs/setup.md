@@ -2,7 +2,7 @@
 layout: default
 title: 0 - Install & Setup
 nav_order: 2
-last_modified_date: 2024-08-20
+last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # Install and Set Up Git
@@ -79,6 +79,3 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
     [![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
 
 - **SSH Keys** - you can also use SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository. More about SSH authentication to GitHub is [available here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
-
-- - -
-Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

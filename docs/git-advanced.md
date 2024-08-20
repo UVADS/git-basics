@@ -2,6 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
+last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # Advanced `git`
@@ -242,6 +243,3 @@ Topics include:
 - Signing repo commits and pushes using `ssh`
 - Large/Monorepo options
 - etc.
-
-- - -
-Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.
