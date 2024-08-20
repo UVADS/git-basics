@@ -216,3 +216,6 @@ jobs:
             --data '{"event_type": "${{ env.IMAGE_NAME }} update to ${{ env.IMAGE_TAG }}", "client_payload": { "service": "${{ env.SVC_NAME }}", "version": "${{ env.IMAGE_TAG }}" }}'
 {% endraw %}
 ```
+
+- - -
+Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

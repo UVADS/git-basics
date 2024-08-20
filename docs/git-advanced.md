@@ -242,3 +242,6 @@ Topics include:
 - Signing repo commits and pushes using `ssh`
 - Large/Monorepo options
 - etc.
+
+- - -
+Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

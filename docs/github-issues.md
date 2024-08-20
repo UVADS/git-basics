@@ -25,3 +25,6 @@ GitHub Issues provides a structured and transparent way for teams to organize th
 
 {: .success :}
 [**Learn more about GitHub Issues**](https://docs.github.com/en/issues)
+
+- - -
+Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

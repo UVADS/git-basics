@@ -240,3 +240,6 @@ $ git log --oneline --graph --decorate --all
 |/|   
 * | 79c0c50e status page update and timestamps
 ```
+
+- - -
+Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.
