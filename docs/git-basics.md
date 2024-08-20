@@ -2,6 +2,7 @@
 layout: default
 title: 2 - Git Basics
 nav_order: 4
+last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # Git Basics
@@ -240,6 +241,3 @@ $ git log --oneline --graph --decorate --all
 |/|   
 * | 79c0c50e status page update and timestamps
 ```
-
-- - -
-Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

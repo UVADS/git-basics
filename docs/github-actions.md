@@ -2,6 +2,7 @@
 layout: default
 title: 6 - GitHub Actions
 nav_order: 8
+last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # GitHub Actions
@@ -216,6 +217,3 @@ jobs:
             --data '{"event_type": "${{ env.IMAGE_NAME }} update to ${{ env.IMAGE_TAG }}", "client_payload": { "service": "${{ env.SVC_NAME }}", "version": "${{ env.IMAGE_TAG }}" }}'
 {% endraw %}
 ```
-
-- - -
-Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

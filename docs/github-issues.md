@@ -2,6 +2,7 @@
 layout: default
 title: 5 - GitHub Issues
 nav_order: 7
+last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # GitHub Issues
@@ -25,6 +26,3 @@ GitHub Issues provides a structured and transparent way for teams to organize th
 
 {: .success :}
 [**Learn more about GitHub Issues**](https://docs.github.com/en/issues)
-
-- - -
-Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.

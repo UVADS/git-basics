@@ -2,6 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
+last_modified_date: "2024-08-20 10:46AM"
 ---
 
 # Advanced `git`
@@ -119,7 +120,7 @@ git reset --hard HEAD^
 git reset --hard be47384a
 ```
 
-**Revert** - rewinds your files ack to the previous commits by adding a new commit to show this.
+**Revert** - rewinds your files back to the previous commits by adding a new commit to show this. Think of "revert" as exposing this rewind, whereas "reset" does not.
 
 ```
 # Revert the commit 0766c053
@@ -148,6 +149,8 @@ You might `rebase` to edit previous commit messages, combine commits, and delete
 {: .note }
 Note that it is considered bad practice to rebase commits that have already been pushed to a repository. This could create
 considerable problems for other collaborators.
+
+**Squash** is an additional command for combining, reordering, simplifying, or rewriting commit histories. It is often used when merging two branches and the developer wants to simplify the tree. [Learn more](https://github.blog/open-source/git/squash-your-commits/).
 
 ## Cherry-pick
 
@@ -242,6 +245,3 @@ Topics include:
 - Signing repo commits and pushes using `ssh`
 - Large/Monorepo options
 - etc.
-
-- - -
-Last updated {{ "now" | date: "%Y-%m-%d %H:%M" }}.
