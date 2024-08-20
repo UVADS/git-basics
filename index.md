@@ -19,6 +19,8 @@ Source Control Basics: How to set up, configure, and work with `git` and GitHub.
 
 ---
 
+<img src="/images/git6963.jpg" style="float:right;max-width:25%;" />
+
 ## What is Source Control?
 
 Source control is the process of tracking changes and versions of electronic files over time. This might include code, data, images, and other files. Good source control management tools allow users to see the entire history of changes to any specific file, or the evolution of an entire project. `git` is currently the most popular and feature-rich source control tool.
