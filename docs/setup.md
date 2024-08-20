@@ -2,6 +2,7 @@
 layout: default
 title: 0 - Install & Setup
 nav_order: 2
+last_modified_date: 2024-08-20
 ---
 
 # Install and Set Up Git
