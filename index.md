@@ -19,7 +19,7 @@ Source Control Basics: How to set up, configure, and work with `git` and GitHub.
 
 ---
 
-<img src="https://uvads.github.io/git-basics/assets/images/git6963.jpg" style="float:right;max-width:25%;" />
+<img src="https://uvads.github.io/git-basics/assets/images/git6963.jpg" style="float:right;max-width:40%;" />
 
 ## What is Source Control?
 
