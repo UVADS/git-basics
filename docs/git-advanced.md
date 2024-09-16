@@ -2,7 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
-last_modified_date: "2024-08-20 10:46AM"
+last_modified_date: "2024-09-15 10:46AM"
 ---
 
 # Advanced `git`
@@ -103,7 +103,7 @@ Developers can also sign pushes in the same way as commits.
 
 Sometimes, despite your best efforts, something is committed into your repository that has gone horribly wrong. Perhaps many files are affected, or the stability of your application is in jeopardy. You need to revert your changes and go back one or more versions in `git`.
 
-**Reset** - rewinds your history (files and commits) back to the previous commit.
+**Reset** - rewinds your history (files and commits) back to a previous commit.
 
 ```
 # If you are pulling, rebasing or your new code is a mess, and you want to return to the last committed point:
@@ -121,6 +121,7 @@ git reset --hard be47384a
 ```
 
 **Revert** - rewinds your files back to the previous commits by adding a new commit to show this. Think of "revert" as exposing this rewind, whereas "reset" does not.
+Revert "undoes" the action of the commit you revert. Be careful when reverting a commit well in the past.
 
 ```
 # Revert the commit 0766c053
