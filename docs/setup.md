@@ -86,4 +86,4 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
 
 - When a PAT is invalid, the user will be given a `username` and `password` prompt. This is likely because the PAT has expired or is malformed.
   
-- Remember that if you inject your PAT token value into the GitHub repository URL in the moment of cloning, that token is hard-coded into the `.git/config` file of that repository. You should update that string with a fresh PAT as needed.
+- Remember that if you inject your PAT token value into the GitHub repository URL in the moment of cloning, that token is hard-coded into the `.git/config` file of that repository. You should [update that URL](https://uvads.github.io/git-basics/docs/git-advanced/#change-from-ssh-to-token-authentication) with a fresh PAT as needed.
