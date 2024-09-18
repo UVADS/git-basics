@@ -79,3 +79,11 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
     [![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
 
 - **SSH Keys** - you can also use SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository. More about SSH authentication to GitHub is [available here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+## Troubleshooting Authentication
+
+- SSH key warnings are verbose and should be somewhat easy to interpret.
+
+- When a PAT is invalid, the user will be given a `username` and `password` prompt. This is likely because the PAT has expired or is malformed.
+  
+- Remember that if you inject your PAT token value into the GitHub repository URL in the moment of cloning, that token is hard-coded into the `.git/config` file of that repository. You should update that string with a fresh PAT as needed.
