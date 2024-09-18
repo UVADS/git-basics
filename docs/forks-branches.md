@@ -26,7 +26,9 @@ Git enables software developers to copy an existing codebase and work with the c
 
 The default branch of most repositories is called `main`. Many developers do their everyday work adding and committing to the `main` branch. But what if you would like to experiment with a new library, or test out new functionality without disrupting the functionality of the original code? This is what a branch is for.
 
-A new branch is a complete copy of your code that can have an independent life from the branch it was copied from. 
+A branch is a complete copy of your code that can have an independent life from the branch it was copied from. 
+
+### Creating a branch
 
 To create a new branch (based on a copy of the branch you are currently using)
 ```
@@ -73,7 +75,7 @@ To create and work with a fork of a repository:
 
 ## Upstream
 
-Repotories that are linked with GitHub already have a remote configuration generally called "origin". This is a reference to the external hosted version of a repository, i.e. the destination when you `git push` or the source when you `git pull`.
+Repositories that are linked with GitHub already have a remote configuration generally called "origin". This is a reference to the external hosted version of a repository, i.e. the destination when you `git push` or the source when you `git pull`.
 
 To see your remote settings for a specific repository, use the verbose output of the `git remote` command:
 ```
@@ -83,6 +85,31 @@ origin  git@github.com:UVADS/git-basics.git (fetch)
 origin  git@github.com:UVADS/git-basics.git (push)
 ```
 In this example, `origin` is configured for both pulling and pushing.
+
+To configure an upstream repository for a fork, use this command to add a `remote` to the original source of the fork:
+
+```
+git remote add upstream https://github.com/OWNER/REPOSITORY.git
+```
+This adds two additional remotes to your repository:
+
+```
+$ git remote -v
+
+origin  git@github.com:UVADS/git-basics.git (fetch)
+origin  git@github.com:UVADS/git-basics.git (push)
+upstream git@github.com:ACCOUNT/git-basics.git (fetch)
+upstream git@github.com:ACCOUNT/git-basics.git (push)
+```
+
+To incorporate changes from the upstream repository into your fork, you need to `fetch` and `merge`:
+
+```
+git fetch upstream
+git merge upstream/main main
+```
+
+The first line pulls in all changes from `upstream` without merging them. The second line merges the `main` branch from `upstream` into the local `main` branch.
 
 {: .success }
 [**Learn more**](https://uvads.github.io/git-basics/docs/git-advanced/#rename-origin) about naming upstream and downstream remotes

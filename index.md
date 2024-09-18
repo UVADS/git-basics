@@ -46,6 +46,7 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Install and set up `git`
   - Authenticate `git` to GitHub
   - Basic configuration
+  - Troubleshooting authentication
 - [**Creating and managing a repository**](docs/creating-repositories/)
   - Create a repository locally
   - Create a repository in GitHub
