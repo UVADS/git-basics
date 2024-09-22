@@ -74,7 +74,7 @@ The first time you use git you will encounter a couple of setup issues:
 
 GitHub offers two ways to authenticate your local computer to GitHub. Usernames and passwords are no longer an option, as they present security risks. Instead you can use SSH keys or Tokens. We recommend you use a token.
 
-- **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). More details about how to configure your local system [are also available](token-authentication). Or watch the video below:
+- **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). More details about how to configure your local system [are also available](./token-authentication). Or watch the video below:
 
     [![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/CJDy2I9mY_s/maxresdefault.jpg)](https://www.youtube.com/embed/CJDy2I9mY_s?si=UPknm4ygzhenNrRN)
 
