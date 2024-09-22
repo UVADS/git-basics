@@ -21,38 +21,40 @@ This page explains in more depth how to configure `git` to use token authenticat
 
 ## 1. Configuring `git`
 
-    Add a credentials configuration to your environment
+Add a credentials configuration to your environment
 
-    ```
-    git config --global credential.helper 'store --file ~/.my-credentials'
-    ```
+```
+git config --global credential.helper 'store --file ~/.my-credentials'
+```
 
-    This will insert the following stanza in your `~/.gitconfig` file:
+This will insert the following stanza in your `~/.gitconfig` file:
 
-    ```
-    [credential]
-      helper = store --file ~/.git-credentials
-    ```
+```
+[credential]
+  helper = store --file ~/.git-credentials
+```
     
 ## 2. Saving your credentials
 
-    Notice that configuration points to another file, `~/.git-credentials`. Populate (or add to) that file with the following command. This assumes you have two environment variables available: `$GITHUB_USER` and `$GITHUB_TOKEN`.
+Notice that configuration points to another file, `~/.git-credentials`. Populate (or add to) that file with the following command. This assumes you have two environment variables available: `$GITHUB_USER` and `$GITHUB_TOKEN`.
 
-    ```
-    printf "protocol=https\nhost=zithub.com\nusername=$GITHUB_USER\npassword=$GITHUB_TOKEN" | git credential-store --file ~/.git-credentials store
-    ```
-    If you cat out that file you will notice a single line for each provider. For GitHub, this will look something like:
-    ```
-    https://USERNAME:PERSONAL_ACCESS_TOKEN@github.com
-    ```
+```
+printf "protocol=https\nhost=zithub.com\nusername=$GITHUB_USER\npassword=$GITHUB_TOKEN" | git credential-store --file ~/.git-credentials store
+```
+    
+If you cat out that file you will notice a single line for each provider. For GitHub, this will look something like:
+    
+```
+https://USERNAME:PERSONAL_ACCESS_TOKEN@github.com
+```
 
 ## 3. Using Tokens when cloning
 
-    Once the above changes are in place, you can now clone repositories by HTTPS address without inserting your GITHUB_TOKEN or any other value:
+Once the above changes are in place, you can now clone repositories by HTTPS address without inserting your GITHUB_TOKEN or any other value:
 
-    ```
-    git clone https://github.com/ACCOUNT/REPO.git
-    ```
+```
+git clone https://github.com/ACCOUNT/REPO.git
+```
 
 > **NOTE:** Do not add or commit the `.git-credentials` file to a repository as it contains a sensitive token value, and
 > therefore access to your GitHub account.
