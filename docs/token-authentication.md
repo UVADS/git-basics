@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Token Authentication for GitHub
+nav_exclude: true
 # nav_order: 2
 last_modified_date: "2024-08-20 02:13AM"
 ---
