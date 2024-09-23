@@ -22,6 +22,7 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Install and set up `git`
   - Authenticate `git` to GitHub
   - Basic configuration
+  - Troubleshooting
 - [**Creating and managing a repository**](01-creating-repositories.md)
   - Create a repository locally
   - Create a repository in GitHub
