@@ -3,10 +3,10 @@ layout: default
 title: Token Authentication for GitHub
 nav_exclude: true
 # nav_order: 2
-last_modified_date: "2024-09-21 02:13AM"
+last_modified_date: "2024-09-23 02:13AM"
 ---
 
-# Working with Token Authentication to GitHub
+# Setting up Token Authentication for GitHub
 
 <details open markdown="block">
   <summary>
@@ -58,5 +58,23 @@ Once the above changes are in place, you can now clone repositories by HTTPS add
 git clone https://github.com/ACCOUNT/REPO.git
 ```
 
-> **NOTE:** Do not add or commit the `.git-credentials` file to a repository as it contains a sensitive token value, and
+> **NOTE:** Never add or commit the `.git-credentials` file to a repository as it contains a sensitive token value, and
 > therefore access to your GitHub account.
+
+## Troubleshooting
+
+For some users who were using the `cache` credential helper for `git` before switching to the `store`
+credential helper, you may need to erase your cache.
+
+For MacOSX users, enter the following three lines, then hit return twice:
+
+```
+git credential-osxkeychain erase
+host=github.com
+protocol=https
+
+
+```
+
+For Windows users, open the Windows **Credential Manager** control panel, then select Windows Credentials
+and remove any entries for GitHub.
