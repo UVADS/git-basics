@@ -39,6 +39,8 @@ This will insert the following stanza in your `~/.gitconfig` file:
 Notice that configuration points to another file, `~/.git-credentials`. Populate (or add to) that file with the following command. This assumes you have two environment variables available: `$GITHUB_USER` and `$GITHUB_TOKEN`.
 
 ```
+export GITHUB_USER="myuser"
+export GITHUB_TOKEN="gph_TtOoKkEeNn12345"
 printf "protocol=https\nhost=github.com\nusername=$GITHUB_USER\npassword=$GITHUB_TOKEN" | git credential-store --file ~/.git-credentials store
 ```
     
