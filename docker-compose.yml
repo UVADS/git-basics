@@ -11,3 +11,5 @@ services:
     stdin_open: true
     tty: true
     command: bundle exec jekyll serve -H 0.0.0.0 -t
+
+# build here
