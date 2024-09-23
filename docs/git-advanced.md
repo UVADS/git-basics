@@ -218,7 +218,7 @@ destination	    git@github.com:mst3k/some-repo.git (fetch)
 destination	    git@github.com:mst3k/some-repo.git (push)
 ```
 
-## Change from SSH to Token Authentication
+## Changing from SSH to Token Authentication
 
 If you cloned an existing repository using SSH, you can easily update your local `git` to use tokens instead. This is also useful if you have refreshed your PAT and need to update that in your repository.
 
@@ -228,7 +228,13 @@ From within the repo, and assuming you already have a [PAT and git credential st
 git remote set-url origin https://github.com/UVADS/git-basics.git
 ```
 
-This command updates the `url` value within the `.git/config` file of your repository.
+Similarly, if you want to shift from token to SSH authentication, the same command helps with the right URL:
+```
+git remote set-url origin git@github.com:UVADS/git-basics.git
+```
+
+These commands update the `url` value within the `.git/config` file of your repository.
+
 
 ## Bonus - So You Think You Know Git
 
