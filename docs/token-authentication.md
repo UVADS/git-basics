@@ -43,7 +43,7 @@ and remove any entries for GitHub.
 Add a credentials configuration to your environment
 
 ```
-git config --global credential.helper 'store --file ~/.my-credentials'
+git config --global credential.helper 'store --file ~/.git-credentials'
 ```
 
 This will insert the following stanza in your `~/.gitconfig` file:
