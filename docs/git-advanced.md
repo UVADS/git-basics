@@ -2,7 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
-last_modified_date: "2024-09-15 10:46AM"
+last_modified_date: "2024-09-23 10:46AM"
 ---
 
 # Advanced `git`
@@ -222,16 +222,10 @@ destination	    git@github.com:mst3k/some-repo.git (push)
 
 If you cloned an existing repository using SSH, you can easily update your local `git` to use tokens instead. This is also useful if you have refreshed your PAT and need to update that in your repository.
 
-From within the repo, and assuming you already have a PAT created, issue this command (inserting your token in the URL):
+From within the repo, and assuming you already have a [PAT and git credential store set up](../token-authentication/), run this command (inserting your token in the URL):
 
 ```
-git remote set-url origin https://ghp_xxxxxxxxxxxxxxx@github.com/UVADS/git-basics.git
-```
-
-Or if you have saved your PAT as a local `env` variable, use that instead:
-
-```
-git remote set-url origin https://$GITHUB_TOKEN@github.com/UVADS/git-basics.git
+git remote set-url origin https://github.com/UVADS/git-basics.git
 ```
 
 This command updates the `url` value within the `.git/config` file of your repository.

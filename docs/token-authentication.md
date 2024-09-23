@@ -27,11 +27,11 @@ credential helper, you may need to erase your cache.
 For MacOSX users, enter the following three lines, then hit return twice:
 
 ```
-git credential-osxkeychain erase :leftwards_arrow_with_hook:
-host=github.com                  :leftwards_arrow_with_hook:
-protocol=https                   :leftwards_arrow_with_hook:
-:leftwards_arrow_with_hook:
-:leftwards_arrow_with_hook:
+git credential-osxkeychain erase
+host=github.com
+protocol=https
+
+
 ```
 
 For Windows users, open the Windows **Credential Manager** control panel, then select Windows Credentials
