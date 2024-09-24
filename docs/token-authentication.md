@@ -90,3 +90,6 @@ git remote set-url origin https://github.com/ACCOUNT/REPO.git
 > **NOTE:** Never add or commit the `.git-credentials` file to a repository as it contains a sensitive token value, and
 > therefore access to your GitHub account.
 
+## Watch how to set up a PAT
+
+[![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/C4R2mMx6C-k/maxresdefault.jpg)](https://www.youtube.com/embed/C4R2mMx6C-k?si=UPknm4ygzhenNrRN)
