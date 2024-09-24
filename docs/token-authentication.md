@@ -19,6 +19,8 @@ last_modified_date: "2024-09-23 02:13AM"
 
 This page explains in more depth how to configure `git` to use token authentication, and how to set up a `.git-credentials` file so that your PAT only needs to be stored in one location (and not within each repository's `.git/config` file. This is accomplished by configuring git to use the credential store (a hard-coded local file) instead of the credential cache (which keeps credentials in memory).
 
+> Pre-requisite: Create a GitHub [**Personal Access Token (PAT)**](https://github.com/settings/tokens).
+
 ## 0. Clear Existing Cached Credentials
 
 For users who were using the `cache` credential helper for `git` before switching to the `store`
