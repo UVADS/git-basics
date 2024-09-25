@@ -2,7 +2,7 @@
 layout: default
 title: 0 - Install & Setup
 nav_order: 2
-last_modified_date: "2024-08-24 02:13AM"
+last_modified_date: "2024-08-25 02:13AM"
 ---
 
 # Install and Set Up Git
@@ -84,13 +84,15 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
 
     [![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/C4R2mMx6C-k/maxresdefault.jpg)](https://www.youtube.com/embed/C4R2mMx6C-k?si=UPknm4ygzhenNrRN)
 
-- **SSH Keys** - you can also use SSH keypairs to authenticate your computer to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository. More about SSH authentication to GitHub is [available here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+- **SSH Keys** - you can also use SSH keypairs to authenticate your command-line to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository. More about SSH authentication to GitHub is [available here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
     To clone a repository authenticated using SSH keys, the command and URL of the repository will look something like:
 
     ```
     git clone git@github.com:ACCOUNT/REPOSITORY.git
     ```
+
+    [![Using SSH keys with GitHub](https://i.ytimg.com/vi/rajlGZ3w4OU/maxresdefault.jpg)](https://www.youtube.com/watch?v=rajlGZ3w4OU)
 
 ## Troubleshooting Authentication
 
