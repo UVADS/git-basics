@@ -76,6 +76,8 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
 
 - **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). More details about how to configure your local system [are also available](../token-authentication). Or watch the video below:
 
+    [Learn about Tokens](docs/token-authentication/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
     To clone a repository authenticated using a token, the command and URL of the repository will look something like:
 
     ```
@@ -85,6 +87,8 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
     [![Using a Personal Access Token with GitHub](https://i.ytimg.com/vi/C4R2mMx6C-k/maxresdefault.jpg)](https://www.youtube.com/embed/C4R2mMx6C-k?si=UPknm4ygzhenNrRN)
 
 - **SSH Keys** - you can also use SSH keypairs to authenticate your command-line to GitHub. These allow your pushes and pulls, etc. to authenticate seamlessly to GitHub as a full owner of the repository. More about SSH authentication to GitHub is [available here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+    [Learn about SSH](docs/ssh-authentication/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
     To clone a repository authenticated using SSH keys, the command and URL of the repository will look something like:
 
