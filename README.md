@@ -18,16 +18,16 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
 
 ## Contents
 
-- [**Setup**](00-setup.md)
+- [**Setup**](docs/setup.md)
   - Install and set up `git`
   - Authenticate `git` to GitHub
   - Basic configuration
   - Troubleshooting
-- [**Creating and managing a repository**](01-creating-repositories.md)
+- [**Creating and managing a repository**](docs/creating-repositories.md)
   - Create a repository locally
   - Create a repository in GitHub
   - Adding or removing collaborators
-- [**Source control basics**](02-git-basics.md)
+- [**Source control basics**](docs/git-basics.md)
   - Diff
   - Status
   - Add
@@ -35,13 +35,13 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Push/Pull
   - Fetch
   - Log
-- [**Branches, Forks, and Merges**](03-forks-branches.md)
+- [**Branches, Forks, and Merges**](docs/forks-branches.md)
   - Branches
   - Forks
   - Fetch from Upstream
   - Merges and Pull Requests
 - [**Issues**](04-github-issues.md)
-- [**Advanced Git/GitHub Features**](05-git-advanced.md)
+- [**Advanced Git/GitHub Features**](docs/git-advanced.md)
   - Stash
   - Signing commits
   - Reset and Revert
@@ -49,7 +49,7 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Cherry-pick
   - Renaming `origin`
   - Bonus
-- [**GitHub Actions**](06-github-actions.md)
+- [**GitHub Actions**](docs/github-actions.md)
   - About
   - Credentials & Secrets
   - Example 1 - Build software upon a push
