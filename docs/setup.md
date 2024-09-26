@@ -112,14 +112,14 @@ Whether you use SSH keys or PATs to authenticate to GitHub or any other provider
 that you rotate them at least once a year. This ensures that a stolen or shared key, that is still active,
 does not offer an attacker any privileges to your account.
 
-### To remove an SSH key from GitHub
+### How to remove an SSH key from GitHub
 
 1. Go to https://github.com/settings/ssh
 2. Find the public key you want to remove.
 3. Use the "Delete" button to remove it from GitHub.
 4. Delete the corresponding private key on your local computer.
 
-### To remove a PAT from GitHub
+### How to remove a PAT from GitHub
 
 1. Go to https://github.com/settings/tokens
 2. Find the token you want to remove.
