@@ -1,6 +1,6 @@
 # Working with `git` and GitHub in Data Science
 
-How to set up, configure, and work with `git` and GitHub.
+How to set up, configure, and work with `git` and GitHub in the practice of data science.
 
 ## What is `git`?
 
