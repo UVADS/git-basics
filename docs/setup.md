@@ -105,3 +105,22 @@ GitHub offers two ways to authenticate your local computer to GitHub. Usernames 
 - When a PAT is invalid, the user will be given a `username` and `password` prompt. This is likely because the PAT has expired or is malformed.
   
 - Remember that if you inject your PAT token value into the GitHub repository URL in the moment of cloning, that token is hard-coded into the `.git/config` file of that repository. You should [update that URL](https://uvads.github.io/git-basics/docs/git-advanced/#change-from-ssh-to-token-authentication) with a fresh PAT as needed.
+
+## Key Rotation
+
+Whether you use SSH keys or PATs to authenticate to GitHub or any other provider, it is highly recommended
+that you rotate them at least once a year. This ensures that a stolen or shared key, that is still active,
+does not offer an attacker any privileges to your account.
+
+### To remove an SSH key from GitHub
+
+1. Go to https://github.com/settings/ssh
+2. Find the public key you want to remove.
+3. Use the "Delete" button to remove it from GitHub.
+4. Delete the corresponding private key on your local computer.
+
+### To remove a PAT from GitHub
+
+1. Go to https://github.com/settings/tokens
+2. Find the token you want to remove.
+3. Use the "Delete" button to remove it from GitHub.
