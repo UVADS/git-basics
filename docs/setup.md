@@ -72,7 +72,19 @@ The first time you use git you will encounter a couple of setup issues:
 
 ## Signing In
 
-GitHub offers two ways to authenticate your local computer to GitHub. Usernames and passwords are no longer an option, as they present security risks. Instead you can use SSH keys or Tokens. We recommend you use a token.
+GitHub offers three ways to authenticate your local computer to GitHub. Usernames and passwords are no longer an option, as they present security risks. Instead you can use SSH keys or Tokens. We recommend you use the GCM.
+
+- **Git Credential Manager (GCM)** - GCM is a separate piece of software that authenticates you to GitHub via your consent in a web page OAuth transaction.
+
+    Install the software by [**following these instructions**](https://github.com/git-ecosystem/git-credential-manager?tab=readme-ov-file).
+
+    > Once it's installed and configured, Git Credential Manager is called implicitly by Git. You don't have to do anything special, and GCM isn't intended to be called directly by the user. For example, when pushing (git push) to Azure DevOps, Bitbucket, or GitHub, a window will automatically open and walk you through the sign-in process. (This process will look slightly different for each Git host, and even in some cases, whether you've connected to an on-premises or cloud-hosted Git host.) Later Git commands in the same repository will re-use existing credentials or tokens that GCM has stored for as long as they're valid.
+
+    To clone a repository authenticated using the GCM, the command and URL of the repository will look something like:
+
+    ```
+    git clone https://github.com/ACCOUNT/REPOSITORY.git
+    ```
 
 - **Personal Access Tokens (PATs)** - PATs are long, randomized tokens that can be scoped with specific levels of permissions. More on how to authenticate using PATs [can be found here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). More details about how to configure your local system [are also available](../token-authentication). Or watch the video below:
 
