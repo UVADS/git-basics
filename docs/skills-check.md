@@ -2,7 +2,7 @@
 layout: default
 title: 7 - Skills Check
 nav_order: 9
-last_modified_date: "2024-08-20 02:13AM"
+last_modified_date: "2025-01-08 02:13AM"
 ---
 
 # Skills Check
@@ -16,4 +16,20 @@ last_modified_date: "2024-08-20 02:13AM"
 {:toc}
 </details>
 
-Here is where we can put some challenges / tests / goals to check against.
+Test your grasp of git and GitHub by using the following checks:
+
+## Novice
+
+1. Create a `git` repository in GitHub.
+2. Create a `git` repository using the command-line.
+3. Set up SSH key authentication to GitHub
+4. Clone a GitHub repository to your local computer.
+4. Perform simple `git add` / `commit` / `push` / `pull` operations.
+
+## Advanced Beginner
+
+## Competent
+
+## Proficient
+
+## Expert
