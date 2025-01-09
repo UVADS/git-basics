@@ -50,6 +50,7 @@ Test your grasp of git and GitHub by using the following checks:
 2. Restore a stash to resume working.
 3. Tag a commit and push it to GitHub.
 4. List all tags for a repository.
+5. Move the repository back one commit.
 5. Change the name of a repository in GitHub and manually update the address in `.git/config`.
 6. Submit a Pull Request so that your changes can be merged upstream into the original repository.
 
