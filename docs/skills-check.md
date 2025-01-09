@@ -24,12 +24,35 @@ Test your grasp of git and GitHub by using the following checks:
 2. Create a `git` repository using the command-line.
 3. Set up SSH key authentication to GitHub
 4. Clone a GitHub repository to your local computer.
-4. Perform simple `git add` / `commit` / `push` / `pull` operations.
+5. Perform simple `git add` / `commit` / `push` / `pull` operations.
+6. Display `git` status at any time in your repository.
 
 ## Advanced Beginner
 
+1. List the branches in your local repository.
+2. Create and switch to a new branch in your local repository.
+3. Make changes then add/commit/push the new branch back to GitHub.
+4. Merge a branch into `main`.
+5. Delete a local branch.
+6. Display the `git log` for your repository.
+
 ## Competent
+
+1. Fork a repository that you do not own.
+2. Clone the fork you just created.
+3. Configure an `upstream` remote so that you can synchronize your fork with any changes in the original repo.
+4. Fetch and merge from `upstream`.
+5. Be familiar with how to smooth out a simple (1 file) MERGE conflict.
 
 ## Proficient
 
+1. Use `git stash` properly to save state without committing.
+2. Restore a stash to resume working.
+3. Tag a commit and push it to GitHub.
+4. List all tags for a repository.
+5. Change the name of a repository in GitHub and manually update the address in `.git/config`.
+6. Submit a Pull Request so that your changes can be merged upstream into the original repository.
+
 ## Expert
+
+1. Create a `git alias` by editing `~/.gitconfig`
