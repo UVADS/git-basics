@@ -56,3 +56,10 @@ Test your grasp of git and GitHub by using the following checks:
 ## Expert
 
 1. Create a `git alias` by editing `~/.gitconfig`
+2. Set up a GitHub Action to automatically build or test your software.
+3. Customize this Action so that it only runs on a specific branch, or only if it contains a tag.
+4. Work with repository or GitHub Organization secrets to pass sensitive information into Actions.
+4. Understand the difference between `rebase`, `reset`, and `revert`.
+5. Create a `release` in GitHub.
+6. Set up Actions to respond to Issue types in GitHub.
+7. Understand `submodule` in `git`.
