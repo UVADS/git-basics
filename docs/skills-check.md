@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 7 - Check your Skills
+title: 7 - Skills Check
 nav_order: 9
 last_modified_date: "2024-08-20 02:13AM"
 ---
 
-# Check Your Skills
+# Skills Check
 
 <details open markdown="block">
   <summary>
