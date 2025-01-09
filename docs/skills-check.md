@@ -11,7 +11,7 @@ last_modified_date: "2025-01-08 02:13AM"
   <summary>
     Table of contents
   </summary>
-  {: .text-delta }
+  {: .no_toc .text-delta }
 - TOC
 {:toc}
 </details>
