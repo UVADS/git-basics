@@ -7,15 +7,17 @@ last_modified_date: "2024-09-23 02:13AM"
 ---
 
 # Setting up Token Authentication for GitHub
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
     Table of contents
   </summary>
-  {: .text-delta }
+  {: .no_toc .text-delta }
 - TOC
 {:toc}
 </details>
+
 
 This page explains in more depth how to configure `git` to use token authentication, and how to set up a `.git-credentials` file so that your PAT only needs to be stored in one location (and not within each repository's `.git/config` file. This is accomplished by configuring git to use the credential store (a hard-coded local file) instead of the credential cache (which keeps credentials in memory).
 

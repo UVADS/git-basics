@@ -6,6 +6,17 @@ last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # GitHub Issues
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .no_toc .text-delta }
+- TOC
+{:toc}
+</details>
+
 
 GitHub Issues is a robust and collaborative issue tracking system that helps teams manage and prioritize tasks, bugs, and feature requests within a GitHub repository. Users can create issues to report problems, suggest enhancements, or outline new features. Each issue acts as a centralized hub for discussions, allowing team members to comment, share insights, and collaborate on problem-solving. Additionally, issues can be assigned to specific team members, labeled for categorization, and linked to pull requests, fostering a seamless integration with the overall development workflow.
 

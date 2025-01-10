@@ -6,18 +6,19 @@ last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # Git Basics
-
-This page covers the most essential commands when tracking your code using `git` and GitHub.
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
     Table of contents
   </summary>
-  {: .text-delta }
+  {: .no_toc .text-delta }
 - TOC
 {:toc}
 </details>
 
+
+This page covers the most essential commands when tracking your code using `git` and GitHub.
 
 ## Diff
 

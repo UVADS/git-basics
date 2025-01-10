@@ -6,15 +6,17 @@ last_modified_date: "2024-09-23 10:46AM"
 ---
 
 # Advanced `git`
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
     Table of contents
   </summary>
-  {: .text-delta }
+  {: .no_toc .text-delta }
 - TOC
 {:toc}
 </details>
+
 
 ## Tag
 

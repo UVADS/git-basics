@@ -6,12 +6,13 @@ last_modified_date: "2024-08-20 02:13AM"
 ---
 
 # Branches & Merges
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
     Table of contents
   </summary>
-  {: .text-delta }
+  {: .no_toc .text-delta }
 - TOC
 {:toc}
 </details>
