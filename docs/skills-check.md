@@ -6,6 +6,7 @@ last_modified_date: "2025-01-08 02:13AM"
 ---
 
 # Skills Check
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
