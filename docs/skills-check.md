@@ -17,7 +17,7 @@ last_modified_date: "2025-01-08 02:13AM"
 {:toc}
 </details>
 
-Test your grasp of git and GitHub by using the following checks:
+Test your grasp of git and GitHub by using the following checks. Which of these can you do?
 
 ## Novice
 
