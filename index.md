@@ -80,3 +80,4 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Credentials & Secrets
   - Example 1 - Build software upon a push
   - Example 2 - Build and deploy a container
+- [**Skills Check**](docs/skills-check/)
