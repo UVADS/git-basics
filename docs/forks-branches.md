@@ -2,7 +2,7 @@
 layout: default
 title: 3 - Branches & Merges
 nav_order: 5
-last_modified_date: "2024-08-20 02:13AM"
+last_modified_date: "2025-03-24 02:13AM"
 ---
 
 # Branches & Merges
@@ -219,3 +219,5 @@ To resolve this: Clean up the content between the marge markers, leaving only th
 Then, add and commit the changes back to the desired branch, and push.
 
 > [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
+
+Try your hand at a [**merge conflict lab**](https://github.com/skills/resolve-merge-conflicts) in GitHub.
