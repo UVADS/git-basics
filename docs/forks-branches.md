@@ -218,6 +218,9 @@ To resolve this: Clean up the content between the marge markers, leaving only th
 
 Then, add and commit the changes back to the desired branch, and push.
 
-> [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
 
-Try your hand at a [**merge conflict lab**](https://github.com/skills/resolve-merge-conflicts) in GitHub.
+### Learn More
+
+- [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
+
+- Try your hand at a [**merge conflict lab**](https://github.com/skills/resolve-merge-conflicts) in GitHub.
