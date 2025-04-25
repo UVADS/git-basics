@@ -2,7 +2,7 @@
 layout: default
 title: 7 - Skills Check
 nav_order: 9
-last_modified_date: "2025-01-08 02:13AM"
+last_modified_date: "2025-04-24 02:13AM"
 ---
 
 # Skills Check
@@ -44,6 +44,7 @@ Test your grasp of git and GitHub by using the following checks. Which of these 
 3. Configure an `upstream` remote so that you can synchronize your fork with any changes in the original repo.
 4. Fetch and merge from `upstream`.
 5. Be familiar with how to smooth out a simple (1 file) MERGE conflict.
+6. Know how to pull in a file from another branch into your current branch.
 
 ## Proficient
 
