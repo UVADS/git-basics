@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 description: "Working with git and GitHub in Data Science."
 permalink: /
-last_modified_date: "2025-01-20 02:13AM"
+last_modified_date: "2025-04-24 02:13AM"
 ---
 
 # `git` in Data Science
@@ -14,8 +14,8 @@ Source Control Basics: How to set up, configure, and work with `git` and GitHub.
 {: .fs-6 .fw-300 }
 
 [Setting Up](docs/setup/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Basic Commands](docs/git-basics/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Advanced](docs/git-advanced/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Basic Commands](docs/basics/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Advanced](docs/advanced/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Actions](docs/github-actions/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Check](docs/skills-check/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
@@ -53,7 +53,7 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Create a repository locally
   - Create a repository in GitHub
   - Add or remove collaborators
-- [**Source control basics**](docs/git-basics/)
+- [**Source control basics**](docs/basics/)
   - Diff
   - Status
   - Add
@@ -67,7 +67,7 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Fetch from Upstream
   - Merges and Pull Requests
 - [**Issues**](docs/github-issues/)
-- [**Advanced Git/GitHub Features**](docs/git-advanced/)
+- [**Advanced Git/GitHub Features**](docs/advanced/)
   - Stash
   - Signing commits
   - Reset and Revert
