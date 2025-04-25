@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 3 - Branches & Merges
+title: 3 - Forks, Branches & Merges
 nav_order: 5
-last_modified_date: "2025-03-24 02:13AM"
+last_modified_date: "2025-04-24 02:13AM"
 ---
 
-# Branches & Merges
+# Forks, Branches & Merges
 {: .no_toc }
 
 <details open markdown="block">
@@ -218,9 +218,37 @@ To resolve this: Clean up the content between the marge markers, leaving only th
 
 Then, add and commit the changes back to the desired branch, and push.
 
-
 ### Learn More
 
 - [**![YouTube](https://uvads.github.io/git-basics/assets/images/youtube.png) Watch: Resolve Git Merge Conflicts: The Definitive Guide**](https://www.youtube.com/watch?v=Sqsz1-o7nXk)
 
 - Try your hand at a [**merge conflict lab**](https://github.com/skills/resolve-merge-conflicts) in GitHub.
+
+## Partial Merges
+
+A "partial merge" could involve pulling in a file or directory from another branch without a full merge or pull request.
+
+Assume you have two branches: One with the file(s) you want (i.e. the source), and another where you want to copy these files (i.e. the destination).
+
+1. Check out the destination branch.
+
+    ```
+    git checkout <destination-branch>
+    ```
+
+2. Then pull in the file or directory from the other branch using this syntax:
+
+    ```
+    git checkout <source-branch> -- plugins
+    ```
+
+Once complete, the copied files are now ready to add, commit, and push.
+
+For example, if the `main` branch has a file `settings.yaml` that you want to pull over into the `dev` branch, you would issue these commands:
+
+```
+git checkout dev
+git checkout main -- settings.yaml
+git add settings.yaml
+git commit -m "Fetched in the settings file"
+```

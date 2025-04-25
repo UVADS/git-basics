@@ -2,7 +2,7 @@
 layout: default
 title: 2 - Git Basics
 nav_order: 4
-last_modified_date: "2024-08-20 02:13AM"
+last_modified_date: "2025-04-24 02:13AM"
 ---
 
 # Git Basics
@@ -111,6 +111,13 @@ a meaningful, plainspoken message describing the commit.
 ```
 git commit -m "Added new numpy parameter for verbose logging"
 ```
+
+You can also `git add` and `git commit` in one command, which commits all changed files:
+
+```
+git commit -a -m "My commit message"
+```
+
 
 ### How often should I commit my changes?
 
