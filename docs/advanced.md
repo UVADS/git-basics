@@ -284,6 +284,14 @@ Within `~/.gitconfig` these aliases look like this:
         s = status -sb
 ```
 
+Or when created from the command-line they look like this:
+
+```
+git config --global alias.cm 'commit -m'
+git config --global alias.lol 'log --graph --oneline --decorate --color --all'
+git config --global alias.s 'status -sb'
+```
+
 ## Bonus - So You Think You Know Git
 
 In this video Scott Chacon, one of the co-founders and original developers of GitHub, talks about buried and advanced features in Git and GitHub.
