@@ -117,7 +117,7 @@ When working in a team of developers (especially large teams), or when developin
 
 You can sign your commits using a `gpg` or `ssh` keypair, or a `S/MIME` signature. 
 
-GitHub refers to this as signature verification. Learn more about how to set up [sigature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+GitHub refers to this as signature verification. Learn more about how to set up [signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
 Once set up, you can sign any commit, or set a repo/global configuration to always sign your commits.
 
