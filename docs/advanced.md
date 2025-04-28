@@ -2,7 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
-last_modified_date: "2025-04-24 10:46AM"
+last_modified_date: "2025-04-27 10:46AM"
 ---
 
 # Advanced `git`
@@ -22,7 +22,10 @@ last_modified_date: "2025-04-24 10:46AM"
 
 Commits can be tagged by the developer, as a way of marking a specific commit. This is useful in preparation for a version release, or simply for marking a particular goal has been reached.
 
-Tags appear on the main code page of a repository.
+Tags are not conveyed automatically with a remote origin like GitHub, but must be pushed and managed both
+locally and remotely.
+
+Tags appear on the main code page of a repository in GitHub.
 
 Useful commands for tagging in `git`:
 
@@ -34,7 +37,7 @@ Useful commands for tagging in `git`:
 
         git tag v1.0
 
-- Push a specific tag back to origin (i.e. GitHub, etc.)
+- Push a specific tag back to origin (i.e. GitHub, etc.). This can be part of any normal push.
 
         git push origin main v1.0
 
@@ -50,9 +53,9 @@ Useful commands for tagging in `git`:
 
         git show v1.0
 
-Tags can be signed by the developer creating them. They can contain annotations (longer comments), and the author name and date are captured in the `git` database whenever a tag is created or modified.
+Tags can also be signed by the developer creating them. They can contain annotations (longer comments), and the author name and date are captured in the `git` database whenever a tag is created or modified.
 
-Tags can also be incredibly useful when coupled with automations in [**GitHub Actions**](/docs/github-actions/). For instance, a test suite or build can be invoked when specific tags occur, instead of with every push or PR.
+Tags can also be incredibly useful when coupled with automations in [**GitHub Actions**](../github-actions/). For instance, a test suite or build can be invoked when specific tags occur, instead of with every push or a PR.
 
 {: .success :}
 [**Learn more about tagging**](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
