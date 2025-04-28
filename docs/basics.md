@@ -130,7 +130,8 @@ The point is to avoid a single, end-of-the-day commit with 50 unrelated changes.
 The practice of writing quality commit messages is important even for the solo developer. How else can you or a teammate
 easily pinpoint important changes to a file or entire project? It is important to remember not to err on the side of either (a) overly-brief or repetitive comments, or (b) overly-long narrative commentary that will never be read.
 
-> Getting in the habit of creating quality commit messages makes using and collaborating with Git a lot easier. As a general rule, your messages should start with a single line that’s no more than about 50 characters and that describes the changeset concisely, followed by a blank line, followed by a more detailed explanation. The Git project requires that the more detailed explanation include your motivation for the change and contrast its implementation with previous behavior — this is a good guideline to follow. Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or "Fixes bug." <sup>[git-scm.com](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)</sup>
+{: .commit-messages }
+Getting in the habit of creating quality commit messages makes using and collaborating with Git a lot easier. As a general rule, your messages should start with a single line that’s no more than about 50 characters and that describes the changeset concisely, followed by a blank line, followed by a more detailed explanation. The Git project requires that the more detailed explanation include your motivation for the change and contrast its implementation with previous behavior — this is a good guideline to follow. Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or "Fixes bug." <sup>[git-scm.com](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)</sup>
 
 ## Push / Pull
 
