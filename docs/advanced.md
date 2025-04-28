@@ -275,6 +275,9 @@ git cm     # a shortened commit command. just supply the message after this comm
 git lol    # displays a color decorated git log, one line per commit.
 git s      # displays a clearer/shorter git status for your repo.
 ```
+Within `~/.gitconfig` these aliases look like this:
+
+```
 [alias]
         cm = commit -m
 	lol = log --graph --oneline --decorate --color --all
