@@ -263,6 +263,23 @@ git remote set-url origin git@github.com:UVADS/git-basics.git
 
 These commands update the `url` value within the `.git/config` file of your repository.
 
+## Alias Commands
+
+Alias commands are stored as text within your `~/.gitconfig` file. These can help speed up common
+or tedious commands. You can add or edit your aliases by either manually editing that config file, or with `git config --global alias.<alias-name> '<git-command>'`
+
+Here are some examples of useful `git` alias commands:
+
+```
+git cm     # a shortened commit command. just supply the message after this command.
+git lol    # displays a color decorated git log, one line per commit.
+git s      # displays a clearer/shorter git status for your repo.
+```
+[alias]
+        cm = commit -m
+	lol = log --graph --oneline --decorate --color --all
+        s = status -sb
+```
 
 ## Bonus - So You Think You Know Git
 

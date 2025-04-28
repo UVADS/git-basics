@@ -2,7 +2,7 @@
 layout: default
 title: 2 - Git Basics
 nav_order: 4
-last_modified_date: "2025-04-24 02:13AM"
+last_modified_date: "2025-04-28 02:13AM"
 ---
 
 # Git Basics
@@ -164,7 +164,7 @@ Ultimately, good team communication matters the most in this environment.
 
 ### Why doesn't `git` synchronize automatically like Dropbox?
 
-Since changes to code happen over time and require effort to get to a working state, the `git` model depends upon developers having their own sense for when code is ready to be committed and added to source control. Put another way, you don't want half-completed code shipping into the rest of your project.
+Since changes to code happen over time and require effort to get to a working state, the `git` model depends upon developers having their own sense for when code is ready to be committed and added to source control. To put it simply, you don't want half-completed code shipping into the rest of your project.
 
 ## Fetch
 
