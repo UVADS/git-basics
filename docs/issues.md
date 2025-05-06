@@ -2,7 +2,7 @@
 layout: default
 title: 5 - GitHub Issues
 nav_order: 7
-last_modified_date: "2024-08-20 02:13AM"
+last_modified_date: "2025-05-06 02:13AM"
 ---
 
 # GitHub Issues
@@ -28,7 +28,7 @@ In the example above, note a few details:
 
 - There are 16 open issues and 2 closed.
 - Each issue is assigned a unique number.
-- Issues can be general questions/comments or scoped to specific files or even lines of code.
+- Issues can be general questions/comments or scoped to specific files or even lines of code. [Example](https://github.com/UVADS/git-basics/issues/1)
 - Each issue can be tagged (i.e. bug, question, enhancement, etc.) Tags can be customized.
 - Each issue becomes a thread for comments and  automated processes (if desired). 
 - Issues can be assigned to team members for tracking.
