@@ -50,7 +50,7 @@ Data scientists and software developers who write code regularly *greatly* tend 
 
 ### Installation
 
-[Download git]([docs/setup/](https://git-scm.com/downloads)){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download git](https://git-scm.com/downloads){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 1. Install Git using the instructions at the following link. A git GUI version is optional, but the [command-line version](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) is recommended.
 2. Check that the `git` CLI is installed in your environment by issuing the `git` command.
