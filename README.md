@@ -27,7 +27,7 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Create a repository locally
   - Create a repository in GitHub
   - Adding or removing collaborators
-- [**Source control basics**](docs/git-basics.md)
+- [**Source control basics**](docs/basics.md)
   - Diff
   - Status
   - Add
@@ -41,7 +41,7 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Fetch from Upstream
   - Merges and Pull Requests
 - [**Issues**](04-github-issues.md)
-- [**Advanced Git/GitHub Features**](docs/git-advanced.md)
+- [**Advanced Git/GitHub Features**](docs/advanced.md)
   - Stash
   - Signing commits
   - Reset and Revert
@@ -54,3 +54,4 @@ All of which is to say: Code is fundamental to our work, and it would be both ri
   - Credentials & Secrets
   - Example 1 - Build software upon a push
   - Example 2 - Build and deploy a container
+- [**Skills Check**](docs/skills.md)
