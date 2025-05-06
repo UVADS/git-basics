@@ -67,3 +67,13 @@ previous levels. How far can you get?
 5. Create a `release` in GitHub.
 6. Set up Actions to respond to Issue types in GitHub.
 7. Understand `submodule` in `git`.
+
+## Jedi
+
+No Instructions Given - you're on your own!
+
+1. Install the `gh` CLI and open or close an Issue with is.
+2. Create a GitHub Action that relies on a "remote dispatch" call to another repository.
+3. Write a script that both creates a repository in GH and clones it to your local machine.
+4. Use the [GitHub API](https://docs.github.com/en/rest) to grant access to another user for one of your repositories.
+5. Create a GitHub Pages site and publish your own GH site.
