@@ -2,7 +2,7 @@
 layout: default
 title: 0 - Install & Setup
 nav_order: 2
-last_modified_date: "2024-08-25 02:13AM"
+last_modified_date: "2025-05-06 02:13AM"
 ---
 
 # Install and Set Up Git
@@ -52,10 +52,8 @@ Data scientists and software developers who write code regularly *greatly* tend 
 
 [Download git]([docs/setup/](https://git-scm.com/downloads)){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-<ol style="list-style-type: decimal;">
-    <li>Install Git using the instructions at the following link. A git GUI version is optional, but the command line version is recommended: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>&nbsp;</li>
-    <li>Check that the `git` CLI is installed in your environment by issuing the <code>git</code> command.</li>
-</ol>
+1. Install Git using the instructions at the following link. A git GUI version is optional, but the [command-line version](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) is recommended.
+2. Check that the `git` CLI is installed in your environment by issuing the `git` command.
 
 ## First-time Configuration
 
