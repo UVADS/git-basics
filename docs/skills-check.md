@@ -2,7 +2,7 @@
 layout: default
 title: 7 - Skills Check
 nav_order: 9
-last_modified_date: "2025-04-24 02:13AM"
+last_modified_date: "2025-05-06 02:13AM"
 ---
 
 # Skills Check
@@ -17,7 +17,8 @@ last_modified_date: "2025-04-24 02:13AM"
 {:toc}
 </details>
 
-Test your grasp of git and GitHub by using the following checks. Which of these can you do?
+Test your grasp of git and GitHub by using the following checks. Each level assumes a grasp of all
+previous levels. How far can you get?
 
 ## Novice
 
