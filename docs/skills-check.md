@@ -77,3 +77,4 @@ No Instructions Given - you're on your own!
 3. Write a script that both creates a repository in GH and clones it to your local machine.
 4. Use the [GitHub API](https://docs.github.com/en/rest) to grant access to another user for one of your repositories.
 5. Create a GitHub Pages site and publish your own GH site.
+6. Create a Pull Request template for a repo, which asks for specific information from anyone submitting a PR.
