@@ -36,17 +36,19 @@ Here is what **GitHub Desktop** looks like:
 
 ![GitHub Desktop](https://images.ctfassets.net/8aevphvgewt8/5fErhOtgvjrf97d7wOoARB/b262e06c615977f33046c468147aa114/screenshot-windows-dark.png)
 
-Advantages of using the CLI version of `git`:
+Other developers prefer the O.G. command-line version of `git` as written by Linus Torvalds over 25 years ago.
+Some key advantages of using the CLI version of `git` are:
 
 - Fastest way to access all commands.
 - Displays only what the developer wants to see, allowing for focus.
+- Allows for scripting and customization.
 - Might be the only way to use `git` in a remote system (HPC cluster, cloud instances, etc.)
 
 In order to focus on specific operations and workflow steps using `git` this documentation references CLI commands only. We recommend learning those commands to get the concepts, and then learn how they are done in a GUI.
 
 ## Command-Line `git`
 
-Data scientists and software developers who write code regularly *greatly* tend to use the terminal/command-line to interact with `git`. This primer assumes this and does not address various GUI tools for working with `git` and GitHub.
+Data scientists and software developers who write code regularly *overwhelmingly* tend to use the terminal/command-line to interact with `git`. This primer assumes this and does not address various GUI tools for working with `git` and GitHub.
 
 ### Installation
 
