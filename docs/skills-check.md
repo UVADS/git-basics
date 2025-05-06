@@ -37,6 +37,7 @@ previous levels. How far can you get?
 4. Merge a branch into `main`.
 5. Delete a local branch.
 6. Display the `git log` for your repository.
+7. Use `git diff` to inspect changes made to a file.
 
 ## Competent
 
