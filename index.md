@@ -66,7 +66,7 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Forks
   - Fetch from Upstream
   - Merges and Pull Requests
-- [**Issues**](docs/github-issues/)
+- [**Issues**](docs/issues/)
 - [**Advanced Git/GitHub Features**](docs/advanced/)
   - Stash
   - Signing commits
