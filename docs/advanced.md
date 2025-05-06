@@ -2,7 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
-last_modified_date: "2025-04-27 10:46AM"
+last_modified_date: "2025-05-06 10:46AM"
 ---
 
 # Advanced `git`
@@ -274,6 +274,7 @@ Here are some examples of useful `git` alias commands:
 git cm     # a shortened commit command. just supply the message after this command.
 git lol    # displays a color decorated git log, one line per commit.
 git s      # displays a clearer/shorter git status for your repo.
+git pom    # shortened for git push origin main
 ```
 Within `~/.gitconfig` these aliases look like this:
 
@@ -282,6 +283,7 @@ Within `~/.gitconfig` these aliases look like this:
         cm = commit -m
 	lol = log --graph --oneline --decorate --color --all
         s = status -sb
+        pom = push origin main
 ```
 
 Or when created from the command-line they look like this:
@@ -290,7 +292,18 @@ Or when created from the command-line they look like this:
 git config --global alias.cm 'commit -m'
 git config --global alias.lol 'log --graph --oneline --decorate --color --all'
 git config --global alias.s 'status -sb'
+git config --global alias.pom 'push origin main'
 ```
+
+Note the commands above are global. Omit that flag and you can specify an alias to the current repository
+you are in.
+
+## `gh` - the GitHub CLI
+
+GitHub has its own powerful CLI, available [here](https://cli.github.com/).
+
+The goal of this tool is to enable all the GitHub functionality beyond `git` commands. For instance,
+the CLI can open/close Issues or Pull Requests, manage secrets, SSH keys, and configuration, etc.
 
 ## Bonus - So You Think You Know Git
 
