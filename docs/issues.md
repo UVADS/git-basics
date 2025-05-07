@@ -34,7 +34,7 @@ In the example above, note a few details:
 - Each issue becomes a thread for comments and  automated processes (if desired). 
 - Issues can be assigned to team members for tracking.
 
-> :wave: [**Here is an example**](https://github.com/UVADS/git-basics/issues/1) of an issue created within this site's codebase that reflects most of the points above.
+> (`:wave:`) [**Here is an example**](https://github.com/UVADS/git-basics/issues/1) of an issue created within this site's codebase that reflects most of the points above.
 
 GitHub Issues provides a structured and transparent way for teams to organize their work, enabling efficient project management. It offers features such as customizable labels, milestones, and project boards to help teams track progress, set priorities, and ensure that all relevant stakeholders are informed about the status and resolution of each issue. This collaborative and integrated approach enhances communication and facilitates a smooth development process by keeping everyone aligned on the project's goals and tasks.
 
