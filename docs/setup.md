@@ -6,6 +6,7 @@ last_modified_date: "2025-05-06 02:13AM"
 ---
 
 # Install and Set Up Git
+{: .no_toc }
 
 <details open markdown="block">
   <summary>
