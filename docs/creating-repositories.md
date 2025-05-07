@@ -3,7 +3,7 @@ layout: default
 title: 1 - Repositories
 nav_order: 3
 toc: true
-last_modified_date: "2025-04-24 02:13AM"
+last_modified_date: "2025-05-07 02:13AM"
 ---
 
 # Creating and Managing Git Repositories
@@ -126,3 +126,34 @@ To delete a repository you have both in GitHub and on your local computer, do th
 
 1. Locally, `cd ../` to the parent directory above your project directory, and `rm -Rf <project-name>` to delete the entire folder. You can also use the MacOS Finder or Windows Explorer to select and delete this folder.
 2. In GitHub, within the repository page itself, click the "Settings" tab, and scroll to the bottom. There you will find a "Delete this repository" button.
+
+## Managing Collaborators
+
+GitHub allows you to share access to your repositories in a number of ways:
+
+- Add developers to an individual repository
+- Create a **GitHub Organization** and add Users/Groups
+
+{: .note }
+Managing access is the same regardless of whether your repository is Public or Private.
+
+### Add a Developer to a Repo
+
+A simple, but common, use case is adding a partner to an individual repo so that you can work together on a project. To do this, follow these steps:
+
+1. From the repository page in GitHub, go to the **Settings** tab from the top navigation.
+2. On the lefthand navigation, in the "Access" section, select **Collaborators**.
+3. Within the "Manage Access" section of the page, you can add people. Search for them by name, username, or email.
+4. Once you add a user, you can assign them a role with the appropriate permissions.
+
+### Create a GitHub Organization and Manage Users
+
+One of the primary reasons GitHub created Organizations is to allow groups of users easy access to
+a large number of repositories and other features. Organizations allow you to create Groups, and manage
+Group access as needed.
+
+Organization repositories allow you to manage:
+
+- **Direct access** - add an external collaborator from inside/outside the organization.
+- **Group access** - populate a group and grant it access to one or more repositories.
+- **Default access** - Organizations let you configure who in the org should automatically have access to any new repo created in the org.

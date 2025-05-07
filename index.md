@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 description: "Working with git and GitHub in Data Science."
 permalink: /
-last_modified_date: "2025-04-24 02:13AM"
+last_modified_date: "2025-05-07 02:13AM"
 ---
 
 # `git` in Data Science
@@ -49,10 +49,13 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Authenticate `git` to GitHub
   - Basic configuration
   - Troubleshooting authentication
-- [**Creating and managing a repository**](docs/creating-repositories/)
-  - Create a repository locally
-  - Create a repository in GitHub
-  - Add or remove collaborators
+  - Key rotation
+- [**Creating and managing repositories**](docs/creating-repositories/)
+  - Clone
+  - Init
+  - Fork
+  - Delete
+  - Managing collaborators
 - [**Source control basics**](docs/basics/)
   - Diff
   - Status
@@ -66,18 +69,24 @@ Which is to say: Code is fundamental to our work, and it would be risky, ineffic
   - Forks
   - Fetch from Upstream
   - Merges and Pull Requests
-- [**Issues**](docs/issues/)
+  - Partial Merges
 - [**Advanced Git/GitHub Features**](docs/advanced/)
+  - Tag
   - Stash
   - Signing commits
-  - Reset and Revert
+  - Resets and reverting
   - Rebase
   - Cherry-pick
-  - Renaming `origin`
-  - Bonus
+  - Rename `origin`
+  - Changing from SSH to Token Authentication
+  - Alias Commands
+  - `gh` - the GitHub CLI
+  - Bonus - So You Think You Know Git
+- [**Issues**](docs/issues/)
 - [**GitHub Actions**](docs/github-actions/)
-  - About
+  - Use Cases for Data Science
   - Credentials & Secrets
-  - Example 1 - Build software upon a push
-  - Example 2 - Build and deploy a container
+  - Example 1 - Perform tests against your code
+  - Example 2 - Run a container against the repository contents with every push
+  - Example 3 - Build and push a container with all new tagged releases
 - [**Skills Check**](docs/skills-check/)
