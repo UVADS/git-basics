@@ -31,7 +31,7 @@ Source control, also known as "version control," is the process of tracking chan
 
 > Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows. <sup>[Wikipedia](https://en.wikipedia.org/wiki/Git)</sup>
 
-## What is GitHub? :octocat:
+## What is GitHub? <img src="https://uvads.github.io/git-basics/assets/images/octocat-48.png" />
 
 > GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It currently hosts work by approximately 100M developers. <sup>[Wikipedia](https://en.wikipedia.org/wiki/GitHub)</sup>
 
