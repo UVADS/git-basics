@@ -27,11 +27,11 @@ Source Control Basics: How to set up, configure, and work with `git` and GitHub.
 
 Source control, also known as "version control," is the process of tracking changes and versions of electronic files over time. This might include code, data, images, and other files. Good source control management tools allow users to see the entire history of changes to any specific file, or the evolution of an entire project. `git` is currently the most popular and feature-rich source control tool.
 
-## What is `git`?
+## What is `git`? :github:
 
 > Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows. <sup>[Wikipedia](https://en.wikipedia.org/wiki/Git)</sup>
 
-## What is GitHub?
+## What is GitHub? :octocat:
 
 > GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. It currently hosts work by approximately 100M developers. <sup>[Wikipedia](https://en.wikipedia.org/wiki/GitHub)</sup>
 
