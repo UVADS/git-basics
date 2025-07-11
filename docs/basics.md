@@ -250,3 +250,17 @@ $ git log --oneline --graph --decorate --all
 |/|   
 * | 79c0c50e status page update and timestamps
 ```
+
+## Practice
+
+Practice the above skills by doing the following:
+
+1. In a local git repository that has a GitHub remote, add a new file with some content in it.
+2. `git add` that file to the repository.
+3. Edit the file some more.
+4. Use `git status` to view the state of your repo.
+5. `git add .` your new changes again.
+6. `git commit` the added file and `git push` it to GitHub.
+7. Using the GitHub web interface, add another file to your repository.
+8. Use `git pull` to pull down changes in the repository.
+9. Use `git log` to view all commit activity in the repo.
