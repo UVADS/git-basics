@@ -48,3 +48,14 @@ More to understand about GitHub Issues:
 
 {: .success :}
 [**Learn more about GitHub Issues**](https://docs.github.com/en/issues)
+
+
+## Practice
+
+Practice the above skills by doing the following:
+
+1. In a GitHub repository you own, go to the issues page.
+2. Create a new Issue, giving it some tags and assigning it to yourself.
+3. Add a comment to the issue, adding references to specific lines of code.
+4. Close the issue.
+5. BONUS: Go to a large, active repository owned by someone else. Browse their issue activity, noting that some issues are also Pull Requests. Need an idea of where to look? Try [here](https://github.com/apache/airflow) or [here](https://github.com/pandas-dev/pandas/).
