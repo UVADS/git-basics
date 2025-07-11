@@ -157,3 +157,13 @@ Organization repositories allow you to manage:
 - **Direct access** - add an external collaborator from inside/outside the organization.
 - **Group access** - populate a group and grant it access to one or more repositories.
 - **Default access** - Organizations let you configure who in the org should automatically have access to any new repo created in the org.
+
+## Practice
+
+Practice the above skills by doing the following:
+
+1. Create a new repository in GitHub. Include a `README.md` file so that a default branch is created.
+2. Clone that repository to your local computer.
+3. `git init` a new repository on your local computer.
+4. Create a new repository in GitHub without a `README.md` file and follow the instructions for adding GitHub as a remote to your repository.
+5. Add another user to one of your GitHub repositories. If you need a user to add, try adding `uvasds-gitbot`.
