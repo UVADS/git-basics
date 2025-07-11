@@ -317,3 +317,20 @@ Topics include:
 - Signing repo commits and pushes using `ssh`
 - Large/Monorepo options
 - etc.
+
+
+## Practice
+
+Practice the above skills by doing the following:
+
+1. Working locally in a git repo you have linked to a GitHub remote, `git tag` your latest commit.
+2. Push this tagged commit back to GitHub.
+3. Make some changes to your local repo. Add, edit, or delete a file or two.
+4. Use `git status` to see your untracked changes.
+5. Use `git stash` to stash away those changes.
+6. View the repo now and verify your changes are not visible.
+7. Now pop the stash back into the repository and verify the changes are present.
+8. In a repository with multiple commits, reset your commit history back 3 commits.
+9. In a repository with multiple commits, revert your commit history back 2 commits.
+10. Create a useful `git alias`.
+11. Install the GitHub CLI and use it to list your repositories.
