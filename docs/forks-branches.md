@@ -261,10 +261,11 @@ Practice the above skills by doing the following:
 2. Switch to that branch.
 3. Make some changes/additions to the branch and `add`/`commit` those changes.
 4. Push the new branch to GitHub and verify that you can see it in the GitHub web interface.
-5. Switch back to the `main` branch of your repo, locally. Delete the extra branch you created.
-6. Delete the extra branch within the GitHub web UI.
-7. BONUS: Fork another project that you do not own. This could be a repo for a Python package, platform, or tool that you work with.
-8. Clone your fork to your local workstation.
-9. Explore the code to understand some of its structure. 
-10. Create a new branch within your fork.
-11. Make some changes/additions, then `git add` and `git commit` those changes. Push your branch back to your fork in GitHub.
+5. Merge the new branch contents into the `main` branch.
+6. Switch back to the `main` branch of your repo, locally. Delete the extra branch you created.
+7. Delete the extra branch within the GitHub web UI.
+8. BONUS: Fork another project that you do not own. This could be a repo for a Python package, platform, or tool that you work with.
+9. Clone your fork to your local workstation.
+10. Explore the code to understand some of its structure. 
+11. Create a new branch within your fork.
+12. Make some changes/additions, then `git add` and `git commit` those changes. Push your branch back to your fork in GitHub.
