@@ -252,3 +252,19 @@ git checkout main -- settings.yaml
 git add settings.yaml
 git commit -m "Fetched in the settings file"
 ```
+
+## Practice
+
+Practice the above skills by doing the following:
+
+1. Working in a GitHub repository you have cloned to your local machine, create a new branch in the repo.
+2. Switch to that branch.
+3. Make some changes/additions to the branch and `add`/`commit` those changes.
+4. Push the new branch to GitHub and verify that you can see it in the GitHub web interface.
+5. Switch back to the `main` branch of your repo, locally. Delete the extra branch you created.
+6. Delete the extra branch within the GitHub web UI.
+7. BONUS: Fork another project that you do not own. This could be a repo for a Python package, platform, or tool that you work with.
+8. Clone your fork to your local workstation.
+9. Explore the code to understand some of its structure. 
+10. Create a new branch within your fork.
+11. Make some changes/additions, then `git add` and `git commit` those changes. Push your branch back to your fork in GitHub.
