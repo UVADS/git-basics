@@ -174,14 +174,10 @@ Fetch is a relatively "harmless" command since it does not modify or delete anyt
 
 How is `fetch` different from `pull`? Pulling updates the HEAD of your repository with the changes from the remote repository. So it both pulls down new data/changes but also integrates them with your copy of the repository. 
 
-> **What does HEAD mean?** `HEAD` is the name for the current version of the repository, the most recent commit. Notice in the section below, the top-most (i.e. most recent) commit will also be aliased as `HEAD`.
-
-
 {: .important }
-**How are `pull` and `fetch` different or similar?**
+**How do `pull` and `fetch` compare?**
 - `git fetch` downloads changes from the remote and stores them in your remote-tracking branches (like `origin/main`), but leaves your working branch and local files completely untouched. You're essentially saying "show me what's out there" — you can then inspect the changes before deciding what to do with them.
-- `git pull` does a fetch and then immediately merges (or rebases, if configured) the fetched changes into your current branch. It's the two-step process collapsed into one command — convenient, but it can introduce merge commits or conflicts without you explicitly deciding to merge.
-
+- `git pull` performs a fetch and then immediately merges (or rebases, if configured) the fetched changes into your current branch. It's the two-step process collapsed into one command — convenient, but it can introduce merge commits or conflicts without you explicitly deciding to merge.
 
 ## Log
 
@@ -232,6 +228,8 @@ dd1ea8e Update 03-forks-branches.md
 b835f2f Adding image and upstream
 dc97b96 TOC on page 3
 ```
+
+> **What does HEAD mean?** `HEAD` is an alias for the current version of the repository, the most recent commit. Notice in the section below, the top-most (i.e. most recent) commit has both a hash identifier and an alias as `HEAD`.
 
 Even more informative, you can log with a graph output, showing commits across all branches:
 
