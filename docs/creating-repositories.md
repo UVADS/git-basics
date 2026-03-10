@@ -38,7 +38,7 @@ start a working area (see also: git help tutorial)
 It is important to remember that when **cloning** or **forking** an existing repository, you will inherit the _entire history_ of all previous commits. This is a feature: Newcomers to a project are not restricted to only the history after their arrival.
 
 
-## Clone
+### Clone
 
 `git clone` is the simplest way to begin working with a repository you want connected to GitHub. The `clone` operation clones an entire remote repository to your local workstation.
 
@@ -85,7 +85,7 @@ Assuming you are authenticating to GitHub using SSH keys, here are the steps to 
 7. Note that if you create a new, empty repository within GitHub, it is helpful to tick the box to include a `README.md` file by default. This ensures that a default branch (named `main`) will be created for you.
 
 
-## Init
+### Init
 
 Git repositories can also be created locally and connected with GitHub after creation. (In fact, there are some cases where a local git repository is used for source control but never connected to an external hub.) 
 
@@ -122,6 +122,8 @@ To initialize a local `git` repository and then connect it with GitHub:
 A fork is a copy of someone else’s repository. This is usually because you do not have access to push changes to the repository, or because the organization that controls it requires all changes come through forks and pull requests.
 
 When you fork a repository, a complete copy is made in your own account (or Organization) in GitHub. This gives you complete control to clone and work with the code freely. You own the forked copy, so you can make additions, new functionality, and commit+push to your own fork.
+
+A forked repository also contains the linkage to the original repository from which it was forked. This is another remote, often called "[**upstream**](../forks-branches/#upstream)." 
 
 {: .success :}
 [**Learn more about Forks**](../forks-branches/)
