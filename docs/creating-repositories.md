@@ -3,7 +3,7 @@ layout: default
 title: 1 - Repositories
 nav_order: 3
 toc: true
-last_modified_date: "2025-05-07 02:13AM"
+last_modified_date: "2026-03-10 02:13AM"
 ---
 
 # Creating and Managing Git Repositories
@@ -17,6 +17,12 @@ last_modified_date: "2025-05-07 02:13AM"
 - TOC
 {:toc}
 </details>
+
+## What is a repository?
+
+A `git` repository is a directory that `git` tracks — it stores your project's files along with the complete history of every change ever made to them. That history lives in a hidden `.git` folder at the root of the directory.
+
+## Creating New Repositories
 
 Creating a new repository is often confusing to new users of Git and GitHub. Here is a simple explanation of the two options, with complete instructions on how to work with each.
 
