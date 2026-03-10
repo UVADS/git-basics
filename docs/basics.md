@@ -176,6 +176,15 @@ How is `fetch` different from `pull`? Pulling updates the HEAD of your repositor
 
 > **What does HEAD mean?** `HEAD` is the name for the current version of the repository, the most recent commit. Notice in the section below, the top-most (i.e. most recent) commit will also be aliased as `HEAD`.
 
+
+{: .note }
+**How are `pull` and `fetch` different or similar?**
+
+**`git fetch`** downloads changes from the remote and stores them in your remote-tracking branches (like `origin/main`), but leaves your working branch and local files completely untouched. You're essentially saying "show me what's out there" — you can then inspect the changes before deciding what to do with them.
+
+**`git pull`** does a fetch and then immediately merges (or rebases, if configured) the fetched changes into your current branch. It's the two-step process collapsed into one command — convenient, but it can introduce merge commits or conflicts without you explicitly deciding to merge.
+
+
 ## Log
 
 Since `git` was built to track changes, returning a log of all commits is simple. The default output is verbose and each entry takes several lines:
