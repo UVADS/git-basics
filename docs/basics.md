@@ -2,7 +2,7 @@
 layout: default
 title: 2 - Git Basics
 nav_order: 4
-last_modified_date: "2025-04-28 02:13AM"
+last_modified_date: "2026-03-10 02:13AM"
 ---
 
 # Git Basics
@@ -22,7 +22,7 @@ This page covers the most essential commands when tracking your code using `git`
 
 ## Diff
 
-Git was designed to track changes made to files and their location within a project. `git diff` is one of the best ways to see how things have actually changed. `git diff` is a function that takes two input data sets and outputs the changes between them.
+Git was designed to track changes made to files and their location within a project. `git diff` is one of the best ways to see how things have actually changed. `git diff` is a function that takes two input data sets and outputs the changes between them. Typically this means examining the current version of a file and comparing it to the tracked version in `git`.
 
 For example, imagine that you have cleaned up your code a bit, added some new functionality, and inserted more comments inline. But you step away from your desk (or go to sleep or it's suddenly the weekend) and you need a reminder of what changes have been made to file before you add and commit it? `git diff` can tell you.
 
@@ -30,7 +30,7 @@ A command like this:
 ```
 git diff filename.py
 ```
-will show you a detailed inventory of inserted lines (which start with `+` and are highlighted in blue), deleted lines (which start with `-` and are highlighted in red) for the entire file.
+will show you a detailed inventory of inserted lines (which start with `+` and are highlighted in blue), deleted lines (which start with `-` and are highlighted in red) for a single file.
 
 Or if you need to compare the structure of two directories:
 ```
@@ -178,8 +178,8 @@ How is `fetch` different from `pull`? Pulling updates the HEAD of your repositor
 
 
 {: .important }
-**How are `pull` and `fetch` different or similar?**
-**`git fetch`** downloads changes from the remote and stores them in your remote-tracking branches (like `origin/main`), but leaves your working branch and local files completely untouched. You're essentially saying "show me what's out there" — you can then inspect the changes before deciding what to do with them.
+**How are `pull` and `fetch` different or similar?**<br /><br />
+**`git fetch`** downloads changes from the remote and stores them in your remote-tracking branches (like `origin/main`), but leaves your working branch and local files completely untouched. You're essentially saying "show me what's out there" — you can then inspect the changes before deciding what to do with them.<br /><br />
 **`git pull`** does a fetch and then immediately merges (or rebases, if configured) the fetched changes into your current branch. It's the two-step process collapsed into one command — convenient, but it can introduce merge commits or conflicts without you explicitly deciding to merge.
 
 
