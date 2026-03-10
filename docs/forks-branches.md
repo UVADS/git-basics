@@ -127,8 +127,10 @@ To merge such changes:
 
 1. Make sure all changes from the experimental branch (aka `test`) have been added and committed. 
 
+        git checkout test
+        # make some changes ...
         git add .
-        git commit -m "Tracking changes before merge ..."
+        git commit -m "Tracking changes before merge"
 
 2. Switch to the branch you want to pull changes _into_:
 
@@ -145,7 +147,7 @@ To stay current, he will probably want to merge those changes from `main` into h
     git checkout main
     git pull origin main    # get current
     git checkout dev
-    git merge main          # merge in main
+    git merge main          # merge main changes into dev
 
 At this point his code will be in sync with the primary branch. This means the new features and changes he is developing are less likely to conflict when merged back into `main`. When developers keep a development branch isolated it gets behind, which means merge conflicts will be much more likely.
 
