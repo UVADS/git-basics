@@ -178,9 +178,9 @@ How is `fetch` different from `pull`? Pulling updates the HEAD of your repositor
 
 
 {: .important }
-**How are `pull` and `fetch` different or similar?**<br /><br />
-**`git fetch`** downloads changes from the remote and stores them in your remote-tracking branches (like `origin/main`), but leaves your working branch and local files completely untouched. You're essentially saying "show me what's out there" — you can then inspect the changes before deciding what to do with them.<br /><br />
-**`git pull`** does a fetch and then immediately merges (or rebases, if configured) the fetched changes into your current branch. It's the two-step process collapsed into one command — convenient, but it can introduce merge commits or conflicts without you explicitly deciding to merge.
+**How are `pull` and `fetch` different or similar?**
+- `git fetch` downloads changes from the remote and stores them in your remote-tracking branches (like `origin/main`), but leaves your working branch and local files completely untouched. You're essentially saying "show me what's out there" — you can then inspect the changes before deciding what to do with them.
+- `git pull` does a fetch and then immediately merges (or rebases, if configured) the fetched changes into your current branch. It's the two-step process collapsed into one command — convenient, but it can introduce merge commits or conflicts without you explicitly deciding to merge.
 
 
 ## Log
