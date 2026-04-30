@@ -1,10 +1,10 @@
 title: Git in Data Science
 description: A Jekyll theme for documentation
-baseurl: "git-basics/" 
-url: "https://uvads.github.io/git-basics/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/git-basics"
+url: "https://uvads.github.io"
 repository: uvads/git-basics # for github-metadata
 
-# theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.8.2
 
 permalink: pretty
 
@@ -20,21 +20,9 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
- # specific to the theme website:
-   - bin/
-   - lib/
-   - "*.gemspec"
-   - "*.gem"
-   - LICENSE.txt
-   - package.json
-   - package-lock.json
-   - Rakefile
    - README.md
    - CODE_OF_CONDUCT.md
-   - docker-compose.yml
-   - Dockerfile
- # theme test code
-   - fixtures/
+   - LICENSE.txt
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
