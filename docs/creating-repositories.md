@@ -3,7 +3,7 @@ layout: default
 title: 1 - Repositories
 nav_order: 3
 toc: true
-last_modified_date: "2026-03-10 02:13AM"
+last_modified_date: "2026-07-07 02:13AM"
 ---
 
 # Creating and Managing Git Repositories
@@ -116,6 +116,15 @@ To initialize a local `git` repository and then connect it with GitHub:
     git remote add origin git@github.com:<account>/<repo>.git
     git push -u origin main
     ```
+
+> **Renaming Repositories** - To rename a repository in both GitHub and your local clone of the repository,
+> do the following:
+>
+> 1. Go to the repository page in GitHub, and click on **Settings**.
+> 2. At the top of the "General" settings tab, find "Repository Name" and change as needed.
+> 3. Edit your local repository's `.git/config` file, updating the address of the repository with the new name.
+> 4. **NOTE** that GitHub will still recognize the repository by the old name for a period of time.
+{: .success :}
 
 ## Fork
 
