@@ -3,6 +3,3 @@ TODO: Content needed before these skills-check.md items can get [Review] links
 - Expert #6: Set up Actions to respond to Issue types in GitHub.
   -> github-actions.md has no example triggered by issue events; issues.md
      doesn't cover Actions integration either.
-
-- Expert #7: Understand `submodule` in `git`.
-  -> No page covers git submodules.
