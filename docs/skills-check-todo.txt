@@ -1,13 +1,5 @@
 TODO: Content needed before these skills-check.md items can get [Review] links
 
-- Proficient #5: Change the name of a repository in GitHub and manually update
-  the address in .git/config
-  -> No page covers renaming a repo in GitHub or updating the remote URL.
-
-- Expert #5: Create a `release` in GitHub.
-  -> No page covers creating a GitHub Release (tags exist in advanced.md, but
-     not the Release feature itself).
-
 - Expert #6: Set up Actions to respond to Issue types in GitHub.
   -> github-actions.md has no example triggered by issue events; issues.md
      doesn't cover Actions integration either.

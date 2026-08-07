@@ -117,7 +117,9 @@ To initialize a local `git` repository and then connect it with GitHub:
     git push -u origin main
     ```
 
-> **Renaming Repositories** - To rename a repository in both GitHub and your local clone of the repository,
+### Renaming Repositories
+
+> To rename a repository in both GitHub and your local clone of the repository,
 > do the following:
 >
 > 1. Go to the repository page in GitHub, and click on **Settings**.

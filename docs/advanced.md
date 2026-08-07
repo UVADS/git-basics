@@ -330,6 +330,38 @@ GitHub has its own powerful CLI, available [here](https://cli.github.com/).
 The goal of this tool is to enable all the GitHub functionality beyond `git` commands. For instance,
 the CLI can open/close Issues or Pull Requests, manage secrets, SSH keys, and configuration, etc.
 
+## Releases
+
+A GitHub release is a deployable software snapshot that packages a specific version of your project for users to download and use. It acts as a user-friendly wrapper built on top of a standard Git tag, transforming a specific historical point in your code into a polished, public-facing product version.
+
+Here are three of the easiest ways to create a release in GitHub:
+
+### Web GUI
+
+- Go to the repo → right sidebar (or the "Releases" tab) → "Draft a new release".
+- Choose an existing tag or type a new tag name (GitHub will create it for you, pointed at the branch you pick).
+- Add a title and notes — GitHub can auto-generate notes from merged PRs/commits since the last release.
+- Optionally attach binary files (build artifacts, etc.).
+- Mark as a pre-release or latest, then Publish release.
+
+### `gh` CLI
+
+```
+gh release create v1.2.0 --title "v1.2.0" --notes "What changed..."
+```
+
+- If `v1.2.0` doesn't exist as a tag yet, `gh` creates it for you against the current branch/commit.
+- Add `--generate-notes` instead of `--notes` to auto-generate from commit history, similar to the web UI.
+- Attach assets by listing files after the tag: `gh release create v1.2.0 dist/app.zip`.
+
+### GitHub Action / GitHub API
+
+Releases can also be created automatically from a workflow (e.g., triggered on tag push) using an action like `softprops/action-gh-release`, or via a raw `POST /repos/{owner}/{repo}/releases` API call. This is really the same GUI/CLI mechanism, just automated.
+
+{: .success :}
+[**Learn more about GitHub Releases**](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
+
+
 ## Bonus - So You Think You Know Git
 
 In this video Scott Chacon, one of the co-founders and original developers of GitHub, talks about buried and advanced features in Git and GitHub.

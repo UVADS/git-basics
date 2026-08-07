@@ -55,7 +55,7 @@ previous levels. How far can you get?
 3. Tag a commit and push it to GitHub. [[Review]](../advanced/#tag)
 4. List all tags for a repository. [[Review]](../advanced/#tag)
 5. Move the repository back one commit. [[Review]](../advanced/#resets-and-reverting)
-5. Change the name of a repository in GitHub and manually update the address in `.git/config`.
+5. Change the name of a repository in GitHub and manually update the address in `.git/config`. [[Review]](../creating-repositories/#renaming-repositories)
 6. Submit a Pull Request so that your changes can be merged upstream into the original repository. [[Review]](../forks-branches/#pull-requests)
 
 ## Expert
@@ -65,7 +65,7 @@ previous levels. How far can you get?
 3. Customize this Action so that it only runs on a specific branch, or only if it contains a tag. [[Review]](../github-actions/#example-3---build-and-push-a-container-with-all-new-tagged-releases)
 4. Work with repository or GitHub Organization secrets to pass sensitive information into Actions. [[Review]](../github-actions/#credentials--secrets)
 4. Understand the difference between `rebase`, `reset`, and `revert`. [[Review]](../advanced/#resets-and-reverting)
-5. Create a `release` in GitHub.
+5. Create a `release` in GitHub. [[Review]](../advanced/#releases)
 6. Set up Actions to respond to Issue types in GitHub.
 7. Understand `submodule` in `git`.
 
