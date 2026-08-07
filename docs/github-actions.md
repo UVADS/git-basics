@@ -218,3 +218,47 @@ jobs:
             --data '{"event_type": "${{ env.IMAGE_NAME }} update to ${{ env.IMAGE_TAG }}", "client_payload": { "service": "${{ env.SVC_NAME }}", "version": "${{ env.IMAGE_TAG }}" }}'
 {% endraw %}
 ```
+
+## Example 4 - Respond to a new Issue based on its label
+
+Actions aren't limited to code pushes and tags — they can also trigger off of [GitHub Issues](../issues/) events, such as an issue being opened, edited, or labeled. This example triggers only when the `bug` label is applied to an issue, then automatically comments on it and adds it to a triage project board.
+
+{: .note }
+This action fires on the `labeled` event type and checks that the label applied was specifically `bug` (via `github.event.label.name`). You could just as easily trigger on `opened` and check `github.event.issue.labels.*.name` if you want to catch issues that already have the `bug` label at creation time.
+
+> `.github/workflows/bug-triage.yaml`
+
+```
+{% raw %}
+name: Bug Issue Triage
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  triage:
+    if: github.event.label.name == 'bug'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on the issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "Thanks for reporting this bug! It's been flagged for triage and someone from the team will follow up soon."
+            })
+
+      - name: Add issue to Bug Tracking project
+        uses: actions/add-to-project@v1
+        with:
+          project-url: https://github.com/orgs/UVADS/projects/1
+          github-token: ${{ secrets.PROJECT_TOKEN }}
+{% endraw %}
+```
+
+{: .success }
+Learn more about [**Events that trigger workflows**](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issues) using GitHub Actions.

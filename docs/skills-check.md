@@ -66,7 +66,7 @@ previous levels. How far can you get?
 4. Work with repository or GitHub Organization secrets to pass sensitive information into Actions. [[Review]](../github-actions/#credentials--secrets)
 4. Understand the difference between `rebase`, `reset`, and `revert`. [[Review]](../advanced/#resets-and-reverting)
 5. Create a `release` in GitHub. [[Review]](../advanced/#releases)
-6. Set up Actions to respond to Issue types in GitHub.
+6. Set up Actions to respond to Issue types in GitHub. [[Review]](../github-actions/#example-4---respond-to-a-new-issue-based-on-its-label)
 7. Understand `submodule` in `git`. [[Learn More]](https://github.blog/open-source/git/working-with-submodules/)
 
 ## Jedi
