@@ -3,7 +3,7 @@ layout: default
 title: 1 - Repositories
 nav_order: 3
 toc: true
-last_modified_date: "2026-07-07 02:13AM"
+last_modified_date: "2026-08-07 02:13AM"
 ---
 
 # Creating and Managing Git Repositories

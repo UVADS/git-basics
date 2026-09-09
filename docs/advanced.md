@@ -2,7 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
-last_modified_date: "2025-09-16 10:46AM"
+last_modified_date: "2026-09-09 02:13AM"
 ---
 
 # Advanced `git`
@@ -306,7 +306,7 @@ Within `~/.gitconfig` these aliases look like this:
 ```
 [alias]
         cm = commit -m
-	lol = log --graph --oneline --decorate --color --all
+        lol = log --graph --oneline --decorate --color --all
         s = status -sb
         pom = push origin main
 ```
@@ -336,7 +336,7 @@ A GitHub release is a deployable software snapshot that packages a specific vers
 
 Here are three of the easiest ways to create a release in GitHub:
 
-### Web GUI
+### 1. Web GUI
 
 - Go to the repo → right sidebar (or the "Releases" tab) → "Draft a new release".
 - Choose an existing tag or type a new tag name (GitHub will create it for you, pointed at the branch you pick).
@@ -344,7 +344,7 @@ Here are three of the easiest ways to create a release in GitHub:
 - Optionally attach binary files (build artifacts, etc.).
 - Mark as a pre-release or latest, then Publish release.
 
-### `gh` CLI
+### 2. `gh` CLI
 
 ```
 gh release create v1.2.0 --title "v1.2.0" --notes "What changed..."
@@ -354,7 +354,7 @@ gh release create v1.2.0 --title "v1.2.0" --notes "What changed..."
 - Add `--generate-notes` instead of `--notes` to auto-generate from commit history, similar to the web UI.
 - Attach assets by listing files after the tag: `gh release create v1.2.0 dist/app.zip`.
 
-### GitHub Action / GitHub API
+### 3. GitHub Action / GitHub API
 
 Releases can also be created automatically from a workflow (e.g., triggered on tag push) using an action like `softprops/action-gh-release`, or via a raw `POST /repos/{owner}/{repo}/releases` API call. This is really the same GUI/CLI mechanism, just automated.
 

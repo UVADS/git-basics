@@ -2,7 +2,7 @@
 layout: default
 title: 6 - GitHub Actions
 nav_order: 8
-last_modified_date: "2024-08-20 02:13AM"
+last_modified_date: "2026-08-07 02:13AM"
 ---
 
 # GitHub Actions
