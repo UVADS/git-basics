@@ -9,17 +9,6 @@ remote_theme: just-the-docs/just-the-docs@v0.8.2
 permalink: pretty
 
 exclude:
- # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
-   - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
    - README.md
    - CODE_OF_CONDUCT.md
    - LICENSE.txt

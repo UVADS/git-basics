@@ -1,9 +1,2 @@
 _extras
 _extras/*
-_site
-_site/*
-.jekyll-cache
-.jekyll-metadata
-vendor
-.bundle
-Gemfile.lock
