@@ -120,6 +120,9 @@ callouts_level: quiet # or loud
 callouts:
   highlight:
     color: yellow
+  hey:
+    title: Hey!
+    color: yellow
   important:
     title: Important
     color: blue
