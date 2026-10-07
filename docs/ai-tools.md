@@ -17,7 +17,7 @@ last_modified_date: "2026-10-07 11:13AM"
 {:toc}
 </details>
 
-{: .note }
+{: .hey }
 AI tools and agents are particularly strong when coupled with source control management tools such
 as `git` and GitHub. They can ease the burden of remembering complex or cryptic commands. However,
 the data scientist should have a strong grasp of WHAT needs to be done, and WHAT has already happened
