@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 6 - GitHub Actions
-nav_order: 8
+title: 7 - GitHub Actions
+nav_order: 9
 last_modified_date: "2026-08-07 02:13AM"
 ---
 
