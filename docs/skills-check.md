@@ -2,7 +2,7 @@
 layout: default
 title: 8 - Skills Check
 nav_order: 10
-last_modified_date: "2026-08-07 02:13AM"
+last_modified_date: "2026-10-07 12:06PM"
 ---
 
 # Skills Check
@@ -55,8 +55,10 @@ previous levels. How far can you get?
 3. Tag a commit and push it to GitHub. [[Review]](../advanced/#tag)
 4. List all tags for a repository. [[Review]](../advanced/#tag)
 5. Move the repository back one commit. [[Review]](../advanced/#resets-and-reverting)
-5. Change the name of a repository in GitHub and manually update the address in `.git/config`. [[Review]](../creating-repositories/#renaming-repositories)
-6. Submit a Pull Request so that your changes can be merged upstream into the original repository. [[Review]](../forks-branches/#pull-requests)
+6. Change the name of a repository in GitHub and manually update the address in `.git/config`. [[Review]](../creating-repositories/#renaming-repositories)
+7. Submit a Pull Request so that your changes can be merged upstream into the original repository. [[Review]](../forks-branches/#pull-requests)
+8. Use an AI agent (Claude Code, Codex, etc.) to commit and push only the files changed for a task, reviewing the diff and commit message before approving. [[Review]](../ai-tools/#1-everyday-commands-add-commit-push)
+9. Ask an AI agent to undo a commit, and confirm whether it chose `reset` or `revert` correctly based on whether the commit was already pushed. [[Review]](../ai-tools/#3-going-back-in-time-reset-revert-restore)
 
 ## Expert
 
@@ -64,10 +66,12 @@ previous levels. How far can you get?
 2. Set up a GitHub Action to automatically build or test your software. [[Review]](../github-actions/)
 3. Customize this Action so that it only runs on a specific branch, or only if it contains a tag. [[Review]](../github-actions/#example-3---build-and-push-a-container-with-all-new-tagged-releases)
 4. Work with repository or GitHub Organization secrets to pass sensitive information into Actions. [[Review]](../github-actions/#credentials--secrets)
-4. Understand the difference between `rebase`, `reset`, and `revert`. [[Review]](../advanced/#resets-and-reverting)
-5. Create a `release` in GitHub. [[Review]](../advanced/#releases)
-6. Set up Actions to respond to Issue types in GitHub. [[Review]](../github-actions/#example-4---respond-to-a-new-issue-based-on-its-label)
-7. Understand `submodule` in `git`. [[Learn More]](https://github.blog/open-source/git/working-with-submodules/)
+5. Understand the difference between `rebase`, `reset`, and `revert`. [[Review]](../advanced/#resets-and-reverting)
+6. Create a `release` in GitHub. [[Review]](../advanced/#releases)
+7. Set up Actions to respond to Issue types in GitHub. [[Review]](../github-actions/#example-4---respond-to-a-new-issue-based-on-its-label)
+8. Understand `submodule` in `git`. [[Learn More]](https://github.blog/open-source/git/working-with-submodules/)
+9. Use an AI agent to explain and resolve a merge conflict, reviewing its proposed resolution before completing the merge. [[Review]](../ai-tools/#4-resolving-merge-conflicts)
+10. Use an AI agent to find why a GitHub Actions run failed, then fix the cause or re-run it. [[Review]](../ai-tools/#5-watching-github-actions-builds-and-tests)
 
 ## Jedi
 
@@ -79,3 +83,5 @@ No Instructions Given - you're on your own!
 4. Use the [GitHub API](https://docs.github.com/en/rest) to grant access to another user for one of your repositories.
 5. Create a GitHub Pages site and publish your own GH site. (Hint: this site runs that way!)
 6. Create a Pull Request template for a repo, which asks for specific information from anyone submitting a PR.
+7. Connect the GitHub MCP server to an AI agent, then have the agent fix an open Issue end to end: read it, create a branch, make the fix, and open a Pull Request that closes the Issue.
+8. Have an AI agent review someone else's Pull Request through the GitHub MCP and post its review comments, then check its findings yourself.
