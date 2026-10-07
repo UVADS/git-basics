@@ -1,9 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "just-the-docs", "0.8.2"
-gem "jekyll-remote-theme"
-gem "jekyll-seo-tag"
-gem "jekyll-github-metadata", ">= 2.15"
-gem "jekyll-include-cache", group: :jekyll_plugins
-gem "jemoji"
+# Matches the gem set used by actions/jekyll-build-pages (includes jekyll,
+# jekyll-remote-theme, jekyll-seo-tag, jekyll-github-metadata,
+# jekyll-include-cache, and jemoji). The theme is loaded via remote_theme.
+gem "github-pages", group: :jekyll_plugins
