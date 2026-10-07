@@ -2,7 +2,7 @@
 layout: default
 title: 4 - Advanced Git
 nav_order: 6
-last_modified_date: "2026-09-09 02:13AM"
+last_modified_date: "2026-10-07 02:13AM"
 ---
 
 # Advanced `git`
@@ -171,6 +171,14 @@ git reset --hard HEAD^
 
 # reset to a particular commit
 git reset --hard be47384a
+```
+
+**Restore a Single File** to the last committed version
+```
+git restore path/to/file
+
+# or if you have already staged the changes using `git add` then:
+git restore --staged --worktree path/to/file
 ```
 
 **Revert** - rewinds your files back to the previous commits by adding a new commit to show this. Think of "revert" as exposing this rewind, whereas "reset" does not.
