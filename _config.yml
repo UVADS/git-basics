@@ -123,6 +123,9 @@ callouts:
   hey:
     title: Hey!
     color: yellow
+  tip:
+    title: Tip
+    color: green
   important:
     title: Important
     color: blue

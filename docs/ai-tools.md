@@ -2,7 +2,7 @@
 layout: default
 title: 5 - AI Tooling in Git
 nav_order: 7
-last_modified_date: "2026-10-07 11:13AM"
+last_modified_date: "2026-10-08 11:01AM"
 ---
 
 # AI Tooling in Git
@@ -107,6 +107,13 @@ When a run fails, the agent can read the log, find the actual error among hundre
 
 {: .note }
 To use the `gh` CLI, install it from [cli.github.com](https://cli.github.com/) and sign in once with `gh auth login`.
+
+
+{: .tip }
+Most AI coding agents such as Claude Code enable users to define custom commands and skills 
+(e.g. `~/.claude/CLAUDE.md`, etc.). Consider defining a custom command to do repetitive tasks
+such as add, commit, and push the file just worked on, or to `git pull` or `git fetch` whenever
+the project is opened.
 
 
 ## GitHub MCP
