@@ -105,15 +105,10 @@ Example prompts:
 
 When a run fails, the agent can read the log, find the actual error among hundreds of lines, and often suggest or make the fix. It also tells the difference between a problem in your code and a temporary problem on GitHub's side, where simply re-running is the right answer.
 
-{: .note }
 To use the `gh` CLI, install it from [cli.github.com](https://cli.github.com/) and sign in once with `gh auth login`.
 
-
 {: .tip }
-Most AI coding agents such as Claude Code enable users to define custom commands and skills 
-(e.g. `~/.claude/CLAUDE.md`, etc.). Consider defining a custom command to do repetitive tasks
-such as add, commit, and push the file just worked on, or to `git pull` or `git fetch` whenever
-the project is opened.
+Most AI coding agents such as Claude Code enable users to define custom commands and skills (e.g. `~/.claude/CLAUDE.md`, etc.). Consider defining a custom command to do repetitive tasks such as add, commit, and push the file just worked on, or to `git pull` or `git fetch` whenever the project is opened.
 
 
 ## GitHub MCP
