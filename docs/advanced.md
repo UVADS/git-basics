@@ -154,7 +154,7 @@ Developers can also sign pushes in the same way as commits.
 
 ## Restores, Resets and Reverting
 
-There are times you do work and do not choose to add/commit those changes to the repo.
+There are times you do work and choose not to add/commit those changes to the repo.
 You can always restore files back to their last committed state with the following:
 
 **Restore a Single File** to the last committed version
